@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/contact_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/contact_no1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:text="Phone No" />
+
+    <Button
+        android:id="@+id/contact_no_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Call" />
+
+    <TextView
+        android:id="@+id/contact_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingTop="15dip"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/contact_no2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:text="Phone No" />
+
+    <Button
+        android:id="@+id/contact_no_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Call" />
+
+    <TextView
+        android:id="@+id/contact_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingTop="15dip"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/contact_no3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:text="Phone No" />
+
+    <Button
+        android:id="@+id/contact_no_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Call" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="contact">#00E5EE</color>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_colors.xml -->
+    <eat-comment/>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/></declare-styleable>
+    <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
+    <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">6587000</integer>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="accept">Accept</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="ans1">To register for any event of Robotix 2015, please visit the Kshitij 2015 website ( www.ktj.in )</string>
+    <string name="ans10">The first thing that you will notice on coming out of the KGP station will be the Participants Reception (PR) team, present there 24x7 from 1800 hrs, 30th of January. Periodic announcements will be made at the station addressing the participants. IIT KGP buses and the volunteers will be available to bring you to the campus. The volunteers will guide you to the Kshitij arena- The Vikramshila Complex. Moreover you can also take a cab to the IIT Campus. The fare from station to the IIT campus is Rs. 120 to Rs 150 (depends on your negotiation skills) and it is a 10 minutes ride.</string>
+    <string name="ans11">You will be taken to the Control Tent where you and your team/ contingent will have to register. For the registration you will have to bring the printout of the accommodation form that has been put up on the website. After that you will be provided accommodation in the campus. After Registration in the Kshitij Arena, you will need to report to the Robotix Helpdesk (Vikramshila Foyer). Look around for notices showing directions towards the helpdesk. Your robot registration will be done on the Robotix Helpdesk. Registrations begin at the Robotix Helpdesk after 1800 Hrs, 30th January, 2015.</string>
+    <string name="ans12">Robotix Events are multiple stage events. The prelims would be starting from the first day and the event finals will be held on the last day of the fest.
+Besides, you can also interest yourself in other events and workshops held in the IIT Kharagpur campus during Kshitij 2015. [http://www.ktj.in].
+</string>
+    <string name="ans13">Submissions of any kind are not required before the event. Although, they will be appreciated and would be eligible for best mechanical design awards which are separate and do not form any criteria for eligibility. Please note that all participants must register on the website to be eligible to participate.</string>
+    <string name="ans14">At most four people can constitute of a team.</string>
+    <string name="ans15">The winners will get their prizes and certificates on the last day of Robotix 2015, i.e. 2nd February, 2015 during the Prize distribution ceremony. Those who need to leave early can contact the Robotix Helpdesk. </string>
+    <string name="ans16">We advise all participants to bring along sufficient spare electronic components. In case you need some help or suggestions with your robot, you can contact the Robotix HelpDesk. Inside Kharagpur, you can go to Chowdhury Electronics in Tech Market. You can refer the Campus Map for directions. You can contact Chowdhury Electronics on this number -   +91 943 441 5812.</string>
+    <string name="ans17">Comprehensive and detailed tutorials are available for all events on our website. From our homepage, click on the tab Tutorials > Event Tutorials > [Event Name].</string>
+    <string name="ans18">Please mail us your workshop proposal, the requirements and suitable dates at workshops@robotix.in.</string>
+    <string name="ans19">Please mail us your event idea at contact@robotix.in</string>
+    <string name="ans2">Robotix 2015 is scheduled to be held from the 30th January to 2nd February, 2015</string>
+    <string name="ans20">We as a society promote hobby robotics and welcome participants from all fields of study.</string>
+    <string name="ans3">You must register on the Kshitij 2015 website (www.ktj.in) before the fest in order to participate in Robotix 2015.</string>
+    <string name="ans4">Accommodation will be provided in the IIT Kharagpur campus itself. For more details regarding accommodation please visit the Acco tab of Kshitij 2015 website (www.ktj.in).</string>
+    <string name="ans5">There will be a nominal registration fee (Rs. 1000) and a fully refundable security deposit (Rs. 100) which is a total of Rs.1100 that is to be provided via a Demand Draft. </string>
+    <string name="ans6">There is no submission of any kind for any Robotix Event. </string>
+    <string name="ans7">Check the event page of the event you want to participate in. The name, and contact number of the event head can be seen on clicking on the phone icon. You can also find the Facebook profiles, email addresses and contact numbers of them in the Contact Us tab of the application</string>
+    <string name="ans8">For any accommodation related issues you can contact our Accomodation head. You can find his contact number in the Contact Us tab of the application.</string>
+    <string name="ans9">Kharagpur is connected by direct train services to most major cities of the country. If your city does not have a direct rail route to Kharagpur, then catch a train to the City of Joy- Kolkata. KGP is situated 120 kms off Kolkata which is well connected to all the cities of India by rail and air. Kharagpur can be reached in about 2 hours by train from Howrah railway station of Kolkata or 3 hours by car from Kolkata Airport.  Train from Kolkata to Kharagpur are available round the clock. The list of local trains from Kolkata to KGP can be obtained from ( http://iitkgp.ac.in/trains.php ). </string>
+    <string name="app_name">Robotix</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_strings.xml -->
+    <eat-comment/>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text">This app won\'t run unless you update the Android Wear app.</string>
+    <string msgid="6006316683626838685" name="common_android_wear_update_title">Update Android Wear</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <string name="decline">Decline</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="qs1">1. How to register for Robotix 2015 events?</string>
+    <string name="qs10">10. How to reach the IIT campus on arrival at Kharagpur?</string>
+    <string name="qs11">11. What after reaching the Kshitij Arena?</string>
+    <string name="qs12">12. I do not want to waste my time, can you tell me when exactly my event will be held in the 3 days?</string>
+    <string name="qs13">13.Do I need to make any video/paper submission to be eligible to participate?</string>
+    <string name="qs14">14. How many members are allowed in a single team?</string>
+    <string name="qs15">15. When will I get my prizes and certificates?</string>
+    <string name="qs16">16. I need electronic components for my robot, where do I go?</string>
+    <string name="qs17">17. Where can I find the tutorials to a given event?</string>
+    <string name="qs18">18. I want to have a Robotics Workshop conducted at my college. Who should I contact?</string>
+    <string name="qs19">19. I have an event idea for you. How do I get it across to you guys?</string>
+    <string name="qs2">2. What are the event dates?</string>
+    <string name="qs20">20. I’m a law/arts/commerce/management student. Can I participate?</string>
+    <string name="qs3">3. Is there any pre-registration?</string>
+    <string name="qs4">4. Where will I stay?</string>
+    <string name="qs5">5. Do you charge anything for taking part in the Robotix competition?</string>
+    <string name="qs6">6. Is there any submission deadline?</string>
+    <string name="qs7">7. Who is the point of contact for my event?</string>
+    <string name="qs8">8. I have accommodation related queries, whom should I contact?</string>
+    <string name="qs9">9. How do I reach Kharagpur?</string>
+    <string name="reach_us">Reach Us:</string>
+    <string name="reachus1">Visit our website: www.robotix.in, for all information and updates on our activities throughout the session. Sign up to receive newsletters and important announcements in your email inbox.
+</string>
+    <string name="reachus2">Keep in touch with us through social media we have official pages on Facebook and Twitter, and a Youtube Channel.
+</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
+    <string name="store_picture_title">Save image</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_main">Contact Us</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_strings.xml -->
+    <eat-comment/>
+    <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="whatdowedo1">Robotix is organised by the Technology Robotix Society, IIT Kharagpur which is the hub of all robotics related activities at IIT Kharagpur and fast becoming the nerve centre of robotics in India.</string>
+    <string name="whatdowedo2">At Technology Robotix Society, we constantly endeavour to better ourselves as a robotics fest every year. Our exponential growth over the years, in both quality and quantity of participation, is testament to this fact. However, we are not alone in our growth. With every passing year, our participants have shown a steady improvement in their thinking and innovation in tackling our problem statements. This means that we can never afford to become complacent, and we try to do justice to the increasing quality of bot-making expertise every year.
+    </string>
+    <string name="who_are_we">ROBOTIX, is the annual robotics competition held during KSHITIJ, the Techno-Management Fest of IIT Kharagpur which is one of the biggest of its kind.</string>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBarCompat">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#0a1c29</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ContactDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/ContactDialogTitle</item>
+    </style>
+    <style name="ContactDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0a1c29</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="EventFooter">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="FooterBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#0a1c29</item>
+    </style>
+    <style name="Fragment">
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="HeadingText" parent="Text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Image">
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="SummaryImage" parent="Image">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="SummaryText" parent="Text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="SummaryTitle" parent="HeadingText">
+        <item name="android:textSize">22sp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="Text">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_iap_style.xml -->
+    <eat-comment/>
+    <style name="Theme.IAPTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_styles.xml -->
+    <eat-comment/>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48dp</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <!-- From: file:/C:/Users/acer/AndroidStudioProjects/RobotixApp1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="container">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="heading">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#0a1c29</item>
+    </style>
+    <style name="heading1">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#0a1c29</item>
+    </style>
+    <style name="heading2">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="heading3">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="heading4">
+        <item name="android:textColor">#353535</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="noAnimTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="notif">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">#0a1c29</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+</resources>

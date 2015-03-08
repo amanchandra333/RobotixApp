@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Users\acer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-6353aa089595f3d8755f53e0139b1b48d6a4248b.jar" />
+    </item>
+    <item
+        jar="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\libs\Parse-1.8.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="dd491448169a0c142a786164b249139d2407a6f9">
+        <dex dex="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\debug\Parse-1.8.1-6732da8bc93c205550a08b038a597548e15a9792.jar" />
+    </item>
+    <item
+        jar="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\debug\classes-7f533fd0d4da940ecfcd78b55bd5a98f20ce397c.jar" />
+    </item>
+    <item
+        jar="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\debug\classes-11bbbf07670c666cefaf6fb79a4c49e050da7215.jar" />
+    </item>
+    <item
+        jar="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-4ed1e28f82757da334a918e13ded2c3dfff52218.jar" />
+    </item>
+    <item
+        jar="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\libs\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-edad3613099d2fbe6f46ad16dfc4a9bff2991d67.jar" />
+    </item>
+
+</items>

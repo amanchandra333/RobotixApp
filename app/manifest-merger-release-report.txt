@@ -1,0 +1,387 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:6:5
+	android:theme
+		ADDED from AndroidManifest.xml:7:5
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:9:5
+MERGED from com.android.support:support-v4:21.0.0:15:5
+MERGED from com.google.android.gms:play-services:6.5.87:18:5
+MERGED from com.android.support:support-v4:21.0.0:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:11:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:10:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.CALL_PHONE
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:15:1
+	android:name
+		ADDED from AndroidManifest.xml:15:18
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:16:1
+	android:name
+		ADDED from AndroidManifest.xml:16:18
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:17:1
+	android:name
+		ADDED from AndroidManifest.xml:17:18
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:18:1
+	android:name
+		ADDED from AndroidManifest.xml:18:18
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:19:1
+	android:name
+		ADDED from AndroidManifest.xml:19:18
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from AndroidManifest.xml:20:1
+	android:name
+		ADDED from AndroidManifest.xml:20:18
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-feature#0x00020000
+ADDED from AndroidManifest.xml:30:5
+	android:required
+		ADDED from AndroidManifest.xml:32:9
+	android:glEsVersion
+		ADDED from AndroidManifest.xml:31:9
+permission#in.robotix.robotixapp.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:38:1
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:38:13
+	android:name
+		ADDED from AndroidManifest.xml:39:5
+uses-permission#in.robotix.robotixapp.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:40:1
+	android:name
+		ADDED from AndroidManifest.xml:40:18
+application
+ADDED from AndroidManifest.xml:42:5
+MERGED from com.android.support:support-v4:21.0.0:16:5
+MERGED from com.google.android.gms:play-services:6.5.87:20:5
+MERGED from com.android.support:support-v4:21.0.0:16:5
+	android:label
+		ADDED from AndroidManifest.xml:46:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:44:9
+	android:icon
+		ADDED from AndroidManifest.xml:45:9
+	android:theme
+		ADDED from AndroidManifest.xml:47:9
+	android:name
+		ADDED from AndroidManifest.xml:43:9
+activity#in.robotix.robotixapp.Splash
+ADDED from AndroidManifest.xml:51:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:53:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:54:13
+	android:name
+		ADDED from AndroidManifest.xml:52:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:55:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:56:17
+	android:name
+		ADDED from AndroidManifest.xml:56:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:58:17
+	android:name
+		ADDED from AndroidManifest.xml:58:27
+activity#in.robotix.robotixapp.EventsDesign
+ADDED from AndroidManifest.xml:61:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:62:13
+	android:name
+		ADDED from AndroidManifest.xml:61:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.EVENTSHula
+ADDED from AndroidManifest.xml:63:13
+action#in.robotix.robotixapp.EVENTSHula
+ADDED from AndroidManifest.xml:64:17
+	android:name
+		ADDED from AndroidManifest.xml:64:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:65:17
+	android:name
+		ADDED from AndroidManifest.xml:65:27
+activity#in.robotix.robotixapp.Events
+ADDED from AndroidManifest.xml:69:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:70:15
+	android:noHistory
+		ADDED from AndroidManifest.xml:71:15
+	android:name
+		ADDED from AndroidManifest.xml:69:20
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.EVENTS
+ADDED from AndroidManifest.xml:72:13
+action#in.robotix.robotixapp.EVENTS
+ADDED from AndroidManifest.xml:73:17
+	android:name
+		ADDED from AndroidManifest.xml:73:25
+activity#in.robotix.robotixapp.SudoCode
+ADDED from AndroidManifest.xml:83:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:84:19
+	android:noHistory
+		ADDED from AndroidManifest.xml:85:19
+	android:name
+		ADDED from AndroidManifest.xml:83:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.SUDOCODE
+ADDED from AndroidManifest.xml:86:13
+action#in.robotix.robotixapp.SUDOCODE
+ADDED from AndroidManifest.xml:87:17
+	android:name
+		ADDED from AndroidManifest.xml:87:25
+activity#in.robotix.robotixapp.DashboardDesign
+ADDED from AndroidManifest.xml:91:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:92:13
+	android:name
+		ADDED from AndroidManifest.xml:91:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.DBD
+ADDED from AndroidManifest.xml:93:13
+action#in.robotix.robotixapp.DBD
+ADDED from AndroidManifest.xml:94:17
+	android:name
+		ADDED from AndroidManifest.xml:94:25
+activity#in.robotix.robotixapp.Faq
+ADDED from AndroidManifest.xml:98:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:99:14
+	android:noHistory
+		ADDED from AndroidManifest.xml:100:14
+	android:name
+		ADDED from AndroidManifest.xml:98:20
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.FAQS
+ADDED from AndroidManifest.xml:101:13
+action#in.robotix.robotixapp.FAQS
+ADDED from AndroidManifest.xml:102:17
+	android:name
+		ADDED from AndroidManifest.xml:102:25
+activity#in.robotix.robotixapp.AboutUs
+ADDED from AndroidManifest.xml:107:11
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:108:15
+	android:noHistory
+		ADDED from AndroidManifest.xml:109:15
+	android:name
+		ADDED from AndroidManifest.xml:107:21
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.ABOUTUS
+ADDED from AndroidManifest.xml:110:13
+action#in.robotix.robotixapp.ABOUTUS
+ADDED from AndroidManifest.xml:111:17
+	android:name
+		ADDED from AndroidManifest.xml:111:25
+activity#in.robotix.robotixapp.Noti
+ADDED from AndroidManifest.xml:116:11
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:117:15
+	android:noHistory
+		ADDED from AndroidManifest.xml:118:15
+	android:name
+		ADDED from AndroidManifest.xml:116:21
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.NOTI
+ADDED from AndroidManifest.xml:119:13
+action#in.robotix.robotixapp.NOTI
+ADDED from AndroidManifest.xml:120:17
+	android:name
+		ADDED from AndroidManifest.xml:120:25
+activity#in.robotix.robotixapp.Googlemap
+ADDED from AndroidManifest.xml:125:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:126:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:127:13
+	android:name
+		ADDED from AndroidManifest.xml:125:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.GMAP
+ADDED from AndroidManifest.xml:128:13
+action#in.robotix.robotixapp.GMAP
+ADDED from AndroidManifest.xml:129:17
+	android:name
+		ADDED from AndroidManifest.xml:129:25
+activity#in.robotix.robotixapp.Cascade
+ADDED from AndroidManifest.xml:133:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:134:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:135:13
+	android:name
+		ADDED from AndroidManifest.xml:133:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.CASCADE
+ADDED from AndroidManifest.xml:136:13
+action#in.robotix.robotixapp.CASCADE
+ADDED from AndroidManifest.xml:137:17
+	android:name
+		ADDED from AndroidManifest.xml:137:25
+activity#in.robotix.robotixapp.Skyfall
+ADDED from AndroidManifest.xml:142:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:143:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:144:13
+	android:name
+		ADDED from AndroidManifest.xml:142:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.SKYFALL
+ADDED from AndroidManifest.xml:145:13
+action#in.robotix.robotixapp.SKYFALL
+ADDED from AndroidManifest.xml:146:17
+	android:name
+		ADDED from AndroidManifest.xml:146:25
+activity#in.robotix.robotixapp.Minefield
+ADDED from AndroidManifest.xml:151:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:152:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:153:13
+	android:name
+		ADDED from AndroidManifest.xml:151:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.MINEFIELD
+ADDED from AndroidManifest.xml:154:13
+action#in.robotix.robotixapp.MINEFIELD
+ADDED from AndroidManifest.xml:155:17
+	android:name
+		ADDED from AndroidManifest.xml:155:25
+activity#in.robotix.robotixapp.Stepup
+ADDED from AndroidManifest.xml:160:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:161:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:162:13
+	android:name
+		ADDED from AndroidManifest.xml:160:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.STEPUP
+ADDED from AndroidManifest.xml:163:13
+action#in.robotix.robotixapp.STEPUP
+ADDED from AndroidManifest.xml:164:17
+	android:name
+		ADDED from AndroidManifest.xml:164:25
+activity#in.robotix.robotixapp.Aughit
+ADDED from AndroidManifest.xml:169:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:170:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:171:13
+	android:name
+		ADDED from AndroidManifest.xml:169:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.AUGHIT
+ADDED from AndroidManifest.xml:172:13
+action#in.robotix.robotixapp.AUGHIT
+ADDED from AndroidManifest.xml:173:17
+	android:name
+		ADDED from AndroidManifest.xml:173:25
+activity#in.robotix.robotixapp.New_contacts
+ADDED from AndroidManifest.xml:179:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:180:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:181:13
+	android:name
+		ADDED from AndroidManifest.xml:179:19
+intent-filter#android.intent.category.DEFAULT+in.robotix.robotixapp.NUMBERSNEW
+ADDED from AndroidManifest.xml:182:13
+action#in.robotix.robotixapp.NUMBERSNEW
+ADDED from AndroidManifest.xml:183:17
+	android:name
+		ADDED from AndroidManifest.xml:183:25
+receiver#in.robotix.robotixapp.CustomNotificationReceiver
+ADDED from AndroidManifest.xml:188:1
+	android:exported
+		ADDED from AndroidManifest.xml:188:75
+	android:name
+		ADDED from AndroidManifest.xml:188:11
+intent-filter#in.robotix.robotixapp.CUSTOM_NOTIFICATION
+ADDED from AndroidManifest.xml:189:1
+action#in.robotix.robotixapp.CUSTOM_NOTIFICATION
+ADDED from AndroidManifest.xml:190:1
+	android:name
+		ADDED from AndroidManifest.xml:190:9
+service#com.parse.PushService
+ADDED from AndroidManifest.xml:194:1
+	android:name
+		ADDED from AndroidManifest.xml:194:10
+receiver#com.parse.ParseBroadcastReceiver
+ADDED from AndroidManifest.xml:195:1
+	android:name
+		ADDED from AndroidManifest.xml:195:11
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:196:3
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:197:5
+	android:name
+		ADDED from AndroidManifest.xml:197:13
+action#android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:198:5
+	android:name
+		ADDED from AndroidManifest.xml:198:13
+receiver#com.parse.GcmBroadcastReceiver
+ADDED from AndroidManifest.xml:209:1
+	android:permission
+		ADDED from AndroidManifest.xml:210:5
+	android:name
+		ADDED from AndroidManifest.xml:209:11
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+in.robotix.robotixapp
+ADDED from AndroidManifest.xml:211:3
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from AndroidManifest.xml:212:5
+	android:name
+		ADDED from AndroidManifest.xml:212:13
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:213:5
+	android:name
+		ADDED from AndroidManifest.xml:213:13
+category#in.robotix.robotixapp
+ADDED from AndroidManifest.xml:218:5
+	android:name
+		ADDED from AndroidManifest.xml:218:15
+meta-data#com.google.android.maps.v2.API_KEY
+ADDED from AndroidManifest.xml:224:9
+	android:name
+		ADDED from AndroidManifest.xml:225:13
+	android:value
+		ADDED from AndroidManifest.xml:226:13
+meta-data#com.google.android.gms.version
+ADDED from com.google.android.gms:play-services:6.5.87:21:9
+	android:name
+		ADDED from com.google.android.gms:play-services:6.5.87:22:13
+	android:value
+		ADDED from com.google.android.gms:play-services:6.5.87:23:13

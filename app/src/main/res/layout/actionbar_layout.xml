@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/ActionBarCompat"
+    android:gravity="center"
+    android:weightSum="100"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip" >
+    
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:layout_weight="30"
+        android:src="@drawable/home"/>
+ 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:layout_weight="40"
+        android:src="@drawable/logo" />
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:layout_weight="30"
+        android:src="@drawable/website"/>
+ 
+</LinearLayout>
