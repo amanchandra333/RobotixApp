@@ -1,7 +1,0 @@
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\classes\release
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\release\support-annotations-21.0.0-6353aa089595f3d8755f53e0139b1b48d6a4248b.jar
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\release\bolts-android-1.1.4-edad3613099d2fbe6f46ad16dfc4a9bff2991d67.jar
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\release\internal_impl-21.0.0-4ed1e28f82757da334a918e13ded2c3dfff52218.jar
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\release\Parse-1.8.1-6732da8bc93c205550a08b038a597548e15a9792.jar
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\release\classes-11bbbf07670c666cefaf6fb79a4c49e050da7215.jar
-C:\Users\acer\AndroidStudioProjects\RobotixApp1\app\build\intermediates\pre-dexed\release\classes-7f533fd0d4da940ecfcd78b55bd5a98f20ce397c.jar

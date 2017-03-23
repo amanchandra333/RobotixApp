@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><in.robotix.robotixapp.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <Button
+        android:id="@+id/notice"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/new_notice_c"
+        android:text="Notice Board" />
+
+
+    <Button
+        android:id="@+id/events"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/new_events_c"
+        android:text="Events" />
+
+    <Button
+        android:id="@+id/map"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/new_map_c"
+        android:text="Campus Map" />
+
+
+    <Button
+        android:id="@+id/faqs"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/new_faqs_c"
+        android:text="FAQs" />
+
+    <Button
+        android:id="@+id/aboutus"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/new_aboutus_c"
+        android:text="About Us" />
+
+
+
+    <Button
+        android:id="@+id/contactus"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/new_contactus_c"
+        android:text="Contact Us" />
+
+</in.robotix.robotixapp.DashboardLayout>

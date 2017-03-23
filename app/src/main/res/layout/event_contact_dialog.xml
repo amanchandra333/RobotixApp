@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dip"
-
+        android:visibility="gone"
         android:text="Name" />
 
     <TextView
@@ -21,13 +21,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dip"
+        android:visibility="gone"
         android:text="Phone No" />
 
     <Button
         android:id="@+id/contact_no_btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:visibility="gone"
         android:text="Call" />
 
     <TextView
@@ -36,6 +37,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="10dip"
         android:paddingTop="15dip"
+        android:visibility="gone"
         android:text="Name" />
 
     <TextView
@@ -43,13 +45,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dip"
+        android:visibility="gone"
         android:text="Phone No" />
 
     <Button
         android:id="@+id/contact_no_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:visibility="gone"
         android:text="Call" />
 
     <TextView
@@ -58,6 +61,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="10dip"
         android:paddingTop="15dip"
+        android:visibility="gone"
         android:text="Name" />
 
     <TextView
@@ -65,13 +69,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dip"
+        android:visibility="gone"
         android:text="Phone No" />
 
     <Button
         android:id="@+id/contact_no_btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:visibility="gone"
         android:text="Call" />
 
 

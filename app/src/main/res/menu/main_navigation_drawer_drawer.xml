@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/noti"
+            android:icon="@drawable/new_notice"
+            android:title="Notice Board" />
+        <item
+            android:id="@+id/evnts"
+            android:icon="@drawable/new_events"
+            android:title="Events" />
+        <item
+            android:id="@+id/abtus"
+            android:icon="@drawable/new_aboutus"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/new_faqs"
+            android:title="FAQs" />
+        <item
+            android:id="@+id/mapp"
+            android:icon="@drawable/new_map"
+            android:title="Campus Map" />
+        <item
+            android:id="@+id/cntct"
+            android:icon="@drawable/new_contactus"
+            android:title="Contact Us" />
+    </group>
+
+
+
+    <item android:title="Find Us">
+        <menu>
+            <item
+                android:id="@+id/web"
+                android:icon="@drawable/website"
+                android:title="Website" />
+            <item
+                android:id="@+id/blog"
+                android:icon="@drawable/web"
+                android:title="Blog" />
+            <item
+                android:id="@+id/wiki"
+                android:icon="@drawable/wp"
+                android:title="Wikipedia" />
+            <item
+                android:id="@+id/fb"
+                android:icon="@drawable/fb"
+                android:title="Facebook" />
+
+            <item
+                android:id="@+id/youtube"
+                android:icon="@drawable/youtube"
+                android:title="Youtube" />
+            <item
+                android:id="@+id/twitter"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+        </menu>
+    </item>
+
+</menu>

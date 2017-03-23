@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<in.robotix.robotixapp.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+
+    <Button
+        android:id="@+id/bombdisposal"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/bombdisposal_m"
+        android:text="Bomb Disposal" />
+
+
+    <Button
+        android:id="@+id/bricks"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/bricks_m"
+        android:text="B.R.I.C.K.S" />
+
+
+    <Button
+        android:id="@+id/conquest"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/conquest_m"
+        android:text="Conquest" />
+
+</in.robotix.robotixapp.DashboardLayout>
