@@ -121,7 +121,7 @@ public class NavigationDrawer extends AppCompatActivity
             Intent updates = new Intent();
             updates.setAction(Intent.ACTION_VIEW);
             updates.addCategory(Intent.CATEGORY_BROWSABLE);
-            updates.setData(Uri.parse("https://en.wikipedia.org/wiki/Robotix"));
+            updates.setData(Uri.parse("https://en.wikipedia.org/wiki/Robotix_(competition)"));
             startActivity(updates);
         }
 

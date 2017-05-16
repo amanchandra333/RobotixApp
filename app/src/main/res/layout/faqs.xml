@@ -1,337 +1,623 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:layout_weight="1"
-    android:orientation="vertical">
-    <LinearLayout android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
-        <TextView
-            android:id="@+id/qs1"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs1"/>
-        <TextView
-            android:id="@+id/ans1"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ans1"
-            android:lineSpacingMultiplier="1.1"
-            android:paddingTop="2dp"/>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_backdrop_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
 
-        <TextView
-            android:id="@+id/qs2"
-            style="@style/heading"
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_faq"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs2"/>
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
 
-        <TextView
-            android:id="@+id/ans2"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans2" />
-        <TextView
-            android:id="@+id/qs3"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs3"/>
+            <ImageView
+                android:src="@drawable/faq_backdrop"
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax" />
 
-        <TextView
-            android:id="@+id/ans3"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans3" />
-        <TextView
-            android:id="@+id/qs4"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs4" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_faq"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
 
-        <TextView
-            android:id="@+id/ans4"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans4" />
-        <TextView
-            android:id="@+id/qs5"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs5"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
 
-        <TextView
-            android:id="@+id/ans5"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans5"/>
-        <TextView
-            android:id="@+id/qs6"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs6"/>
+    </android.support.design.widget.AppBarLayout>
 
-        <TextView
-            android:id="@+id/ans6"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans6"/>
-        <TextView
-            android:id="@+id/qs7"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs7" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:id="@+id/ans7"
-            style="@style/heading1"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans7" />
-        <TextView
-            android:id="@+id/qs8"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs8" />
+            android:orientation="vertical"
+            android:paddingTop="24dp">
 
-        <TextView
-            android:id="@+id/ans8"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans8"/>
-        <TextView
-            android:id="@+id/qs9"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs9" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
 
-        <TextView
-            android:id="@+id/ans9"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans9" />
-        <TextView
-            android:id="@+id/qs10"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs10"/>
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/ans10"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans10"/>
-        <TextView
-            android:id="@+id/qs11"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs11"/>
+                    <TextView
+                    android:id="@+id/qs1"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs1" />
 
-        <TextView
-            android:id="@+id/ans11"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans11"/>
-        <TextView
-            android:id="@+id/qs12"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs12"/>
 
-        <TextView
-            android:id="@+id/ans12"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans12" />
-        <TextView
-            android:id="@+id/qs13"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs13"/>
+                    <TextView
+                    android:id="@+id/ans1"
+                    style="@style/heading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingTop="2dp"
+                    android:text="@string/ans1" />
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/ans13"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans13" />
-        <TextView
-            android:id="@+id/qs14"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs14"/>
+            </android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/ans14"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans14" />
-        <TextView
-            android:id="@+id/qs15"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs15"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/ans15"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans15" />
+                    <TextView
+                    android:id="@+id/qs2"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs2" />
 
-        <TextView
-            android:id="@+id/qs16"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs16"/>
+                    <TextView
+                android:id="@+id/ans2"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans2" />
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/ans16"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans16" />
+            </android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/qs17"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs17"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/ans17"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans17" />
-        <TextView
-            android:id="@+id/qs18"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs18"/>
+                    <TextView
+                        android:id="@+id/qs3"
+                        style="@style/heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs3" />
 
-        <TextView
-            android:id="@+id/ans18"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans18" />
-        <TextView
-            android:id="@+id/qs19"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs19"/>
+                    <TextView
+                    android:id="@+id/ans3"
+                    style="@style/heading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingTop="2dp"
+                    android:text="@string/ans3" />
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/ans19"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:text="@string/ans19" />
+            </android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/qs20"
-            style="@style/heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="6dp"
-            android:text="@string/qs20"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/ans20"
-            style="@style/heading1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:lineSpacingMultiplier="1.1"
-            android:paddingBottom="10dp"
-            android:text="@string/ans20"/>
-    </LinearLayout></ScrollView>
+                    <TextView
+                    android:id="@+id/qs4"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs4" />
+
+                    <TextView
+                    android:id="@+id/ans4"
+                    style="@style/heading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingTop="2dp"
+                    android:text="@string/ans4" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/qs5"
+                style="@style/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qs5" />
+
+                <TextView
+                android:id="@+id/ans5"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans5" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs6"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs6" />
+
+                    <TextView
+                    android:id="@+id/ans6"
+                    style="@style/heading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingTop="2dp"
+                    android:text="@string/ans6" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs7"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs7" />
+
+                    <TextView
+                android:id="@+id/ans7"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans7" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs8"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs8" />
+
+                    <TextView
+                android:id="@+id/ans8"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans8" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs9"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs9" />
+
+                    <TextView
+                android:id="@+id/ans9"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans9" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs10"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs10" />
+
+                    <TextView
+                android:id="@+id/ans10"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans10" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs11"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs11" />
+
+                    <TextView
+                android:id="@+id/ans11"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans11" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs12"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs12" />
+
+                    <TextView
+                android:id="@+id/ans12"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans12" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs13"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs13" />
+
+                    <TextView
+                    android:id="@+id/ans13"
+                    style="@style/heading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingTop="2dp"
+                    android:text="@string/ans13" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs14"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs14" />
+
+                    <TextView
+                android:id="@+id/ans14"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans14" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs15"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs15" />
+
+                    <TextView
+                android:id="@+id/ans15"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans15" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs16"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs16" />
+
+
+                    <TextView
+                android:id="@+id/ans16"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans16" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs17"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs17" />
+
+                    <TextView
+                android:id="@+id/ans17"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans17" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs18"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs18" />
+
+                    <TextView
+                android:id="@+id/ans18"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans18" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs19"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs19" />
+
+                    <TextView
+                android:id="@+id/ans19"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingTop="2dp"
+                android:text="@string/ans19" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                    android:id="@+id/qs20"
+                    style="@style/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs20" />
+
+                    <TextView
+                android:id="@+id/ans20"
+                style="@style/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingBottom="10dp"
+                android:paddingTop="2dp"
+                android:text="@string/ans20" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

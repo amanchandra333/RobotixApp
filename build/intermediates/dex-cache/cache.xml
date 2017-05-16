@@ -2,616 +2,625 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/cbd001e791da16148d1ed1b7d51440a87bdec598/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-awareness-10.0.1_a487a098a0ceeb0b9af2e4362a1b7ccf07087fd7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-10.0.1_0320cd32aa372b7c51a3b6de0c08296ea633be21.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-10.0.1_b33faf40ccc23354d7e440eb9791fd3da537345b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_632a0d4ca67e72e25b0932c2f3c63a977ad53178.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-10.0.1_a8800ae75eead1e90bc5eb6edbc0269b931a8e0f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-safetynet-10.0.1_d56b66a69911b83ca63698d15852991eb42b1fb3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.0.1_e2b017f97313236dc57d42c26a40f1a480c221a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-panorama-10.0.1_28138c445279d1955bf35bfb2b6651320f0fa589.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-nearby-10.0.1_b4664bb4523ed1c6326363beea23015b6264b27f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_5f38e78f310207cceb5ee06085e7f78e24f1b338.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-drive-10.0.1_66cd58a60c1001cbf1ba5c75d32d6801b17574b9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_69db98ce6d9d2a34e5d33ec7c3488a3a78e6a239.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_00d18cb8f3debe69d74dbca0b35ad253d3263c74.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-crash-10.0.1_4c14952e44faf89cf257e5b8d5346346ff7c36b4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-iid-10.0.1_78a5be42bca10624dbbc9662c73fef250dcd14d0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-fitness-10.0.1_e6385783977bbbdfd65d2fd256de9631b487c615.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-10.0.1_9b9b5bff789177c786f5558de482801180d923f2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_e1d4029739c134eeb3f66b359b8936630e13b222.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
+        revision="25.0.3"
         sha1="44a694d4095be84c2888764b1f7256b385c030ad">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-10.0.1_1ead279faa50017f680496623a4b8f7cfb6938a3.jar" />
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_35502a6c4d51c1de08b3b1c2947eb4be39bf9966/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/e36405f1a21789005b8f2e439d2e6a0262148975/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-10.0.1_8a98a8a601a726d42a1d0228c44aff1a2dd01ef8.jar" />
+        revision="25.0.3"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fecd5578939fe43321acacc3b8e31fc3fc57c9f2/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/ff81509e78936a06d6293a84b9743ed60654aa6f/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_fbdfd636f1268acd764138405e7402664df56cea.jar" />
+        revision="25.0.3"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4b74b8b2ec8b6a67bf1e3c6f5925328856ea58bf/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/363dce2ee17f88701625fe06f8094c8e8d85da4c/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_63d457087b486c2de908603c23a756245cea964d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_963cc368b623b29ff8a05e8ad6ac751aa2757dba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_843674981f4ec3bcf2d28f5fbb685c06be30924e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wearable-10.0.1_db64a7ca8704a324153892f3c9b425c1a5649f94.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-10.0.1_9758ea3d5fb236958a146115a8cc64b721031ce1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appinvite-10.0.1_a58bbc270599a457f2d493a44c149c4470a093d9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_4a6c6180caba79b2a014d6aa11015b9a1e5bc2b8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-appindexing-10.0.1_e2afcb8aa0df39dce6aa21b3951036aea985d55a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_dbd93a36f19821e99ca75be55e3279ec33c6fabc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-10.0.1_5e3c94a0fcd1a2d71c28c7f4943be1b8524292ef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-10.0.1_42805b58559d739a3cdc24af5dcf0375c37bd676.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-framework-10.0.1_a3dcdc2d1cdd08eecaf902180e129fc1c5384e9a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
+        revision="25.0.3"
         sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-games-10.0.1_48169307013eeff3a49634cdbb3a70687d987d50.jar" />
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f7c83ca369b362073cc0032ea45dbd01043572eb/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/7bd11519946e4cec3af0125fe7474745e45ddfa0/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-10.0.1_04170d6c3c772161bf5ec2598c8e4cb94e0758c0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-10.0.1_2e39e49814de05f0626963d0bec7188be17bffd6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-10.0.1_d50c36d10f9b039bb72b98c131e783dc03f9bb4a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_d159bb8b4aaf94dd3617b15698a8a7d1b9cee6f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="a48dc0b148059764d32500be558702d5ff932058">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-identity-10.0.1_768faceed69c70972a6c22cf19d5005a55d614b3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-vision-10.0.1_7e27ce6932772809f8f09bcc7dc545f726b852f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-common-10.0.1_b06e88394612e36178a14c773cf2700b4f7e379d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-mediarouter-v7-24.0.0_8f27465645064bd0080c9529257b87cc840ca260.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-10.0.1_b48bf7823902618b14564e687a40f099ed55c1fc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-palette-v7-24.0.0_9c5f8fd6e05592c664aa38ca0d7fedab4172db6e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-places-10.0.1_0e6a604291bb61528dcbe61f4d1d827f3048e735.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-config-10.0.1_1338990911c85857b6a7fc2db8946ba1e0ad4471.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-10.0.1_8a4ae85c83a6812122eb83bceec65d378c14aa27.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_34a3637c888fd9c5a6542003c60e8d8679ce6b42.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_19cae871b8fe84b6022d62bb7933706a002e347c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_db027f3dbc619ff66e62a4153fe49bdc991e248d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_b3c6e4bcea7fa24193f33840c3d5d0432ee35f65.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-10.0.1_9d595990ed2d2072ec0a8b20f5e12d1559a95576.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-10.0.1_78fc610c1e9048f60b838f0f4ba174d8521265cc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-instantapps-10.0.1_c7a26a989b1b4dd67ce3c56a86752b6c59c8f479.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-plus-10.0.1_cd4f25b2bbaa25c8c9b601501ca42edf2ead2bef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-impl-10.0.1_c942b6362a66fae1ba287c642a5534a8c94a5ac0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_876aa0a8f5dfb48efb90d00eb6e4c65a12293e37.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_a7d4df48ef9443a6469d2151eef31da46859f18b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
-        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-10.0.1_543e34e26cf0f721fa20967900de8ed9d438cdcf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="21.1.2"
+        revision="25.0.3"
         sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.0.1_16b795e1bbb9e80ada1ac7fe36c86117252d8a85.jar" />
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5340e00e72b4c5ddc704111a4f23a2a03ee6a2f4/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/e79e98709d9f6aa91ff818b879a98d28c817f6aa/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_8f14b10d6300503b6878f3b03779ceb84b46f94f.jar" />
+        revision="25.0.3"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_929806d8fe1a1b9a5565780966a3c63e30619af4/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/media/makerspace/makerspace_hd/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-10.0.1_22ce3680094e520230f11c06dc4a2199000cda05.jar" />
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_a42af47cbff6710ce119ec85fd8413ba00d90f2b/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/cf1f092ab38b2ad49953bfd6dad05471a9391e41/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_e02b40756153e51c87cfc3d9bb21c3f9622de139.jar" />
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff0175c9947360513f081ce6e188a140d2cb5e5b/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/2636c7c12d1fc6cfca7dfb0044e965554b8f2fcb/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_4fabc796da716b7a3e2a89842e7341e862eb4dc8.jar" />
+        revision="25.0.3"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8559cda0b430b790df6d7940f8aca0b99c2ee90a/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/48744966bebd59bbf6489c49705d2bcf1ed75fa6/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
+        revision="25.0.3"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bb9b4a32defb196c1d1a0682199615d763f649f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/b6de3dade6a02c9cda8cfd54c0e626eff1146085/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3b3ce9f1a2ea90c792778e8fc9a9f7fd5b98786/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/91f5704ab36e56ee40490260279e616421ae3802/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7fb8b67af11a60083be24b7be4ad802821d1cac2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/964f63dced07cd25928f300976e146dc2b9ec576/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dd12ac31acdd7fcd8e31b57edbae5321183d77dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/70293022ffdff12a419a61ac387f5d329c81d368/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8c9c8e0f39a84cd1aad9bb96b08eb2489d44b48a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/342277f0bb8e641794a6ca7e2fc42a583a6f55ee/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4e6ba3a3c651c6230ef3691123f68cdd643f1a38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/799305ca3f93d4549730e46fd564e35b66889b73/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_24b4e1130f1ec5b611ae40eac6fc3789e4ff31d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/c109ed50a15dda1c19cf890f1d3e98d0ea039295/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49b86f415c8d739dbaba3124669bb90bf22f9566/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/5ecb31b9fa878491e79ed381ba83fc58bc0c1f23/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0f527f0288ae0712bbccbb8aa5e198e1a75b6e72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/ec6038847a5caf31f83bb3ed9cc514a1743203d9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e092aa3baaa411e2801e863ff53f5275ffe5bda7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_81bb4a7e64273039e7887ad3555745480ebf3d72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/e7afc2883aa7ca771a6716fc31ccf78d51293ffe/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc10faa57ae255cbf81aea03a5241e77989a50b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/012188520c6d474b537be7175782760db379e796/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
         sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-api-10.0.1_9ccd405a070599de09cd0ae9ccbcf10046661572.jar" />
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_32842d1086c77e9d71bcbc38d9da459219913b01/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/8e876620e92fc05b08dd36a5777ad538cf22681d/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-10.0.1_d36c530675484315b68d89188b5c0a90e9d6ee49.jar" />
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1691449d80d4976b0df76a2d3212e1c8af6e8178/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/db0c97318017a19642f8a8b1e4b9cb4b894293c2/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
+        revision="25.0.3"
+        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b7149c19368d87a440775982408b271c53dc56eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/908aedd45719f251c06cea9a677c6dbb90cfd413/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e0d434acc0c411f8a18618421617e448211e944/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/0f871614abd382758e0bd2b00fecdd9fe2fc077c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_240e618c1dd3e4880cc2111e27d7ac3f44b7da22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/12b203817c25003dcc110bc49b91e15a27fe0131/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f1f5bbd8398c8c597f03a6352a7752d30ab2b0be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/ce520d361a132395c2fb38e1723968114d54d717/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_27c51bfd126eb465aac86032ae70a02c896d76ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/20189e15203c02b0eb56747ba39243c7cfdcff5b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_abccae4aaf5ffbe63aac62aefd86e6422cd00511/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/8c26dafb7b753ca30f515e8bbce9b06e9b6d8008/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0dd14bf8d69e5a3859d01cb1322753f78e5d33c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/b10dcfbe1be7341c3829e36d007162b8c060f3c9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e1ae853961c8bc0c9d324abc19408c3295e39fd8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/bf00e951286fa9a6fcbd8e2bbdf8de035fae6d5b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4fde44fe3a16430d32b28354c15d3320335539dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/0c1ebcf9cc0520ef8120baf041746c3aa5caa7b9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f44a6745aa26440ebf13861dd242732926524c5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/37f1a6ce89c335a6616e2454afdd8feca3e53e70/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_70780fc250d2047cf55bd516b0550099e18c9309/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/f04e8def3f5daaf76c891bf588498fb65f5fda63/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_541f574bf9f46290e1d849ec9f7d8db50fd80e61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/eb734c7dc96cad7d8a7ae36489e8e786c79e5f7d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9c0329becac73a9cb6f8824902e1c8ee26a9d476/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/ba111d068a1dc4613f3dd2344adecde54e841ef3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3612407c469733511e8b341d780bda0427ed6fd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/db38f9b61d9802f0b47e43dd9e34317ceb8a4ff0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6c384a0ef204f292caaa54bb053317758078d0af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/5724ffd5c726f2ab881ab2e90eae80e2de50cea5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ca151bdb711f21636efc883005dea5f19c29783d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/fddc13cc4c9b6fc432efc42de94a75f7dcf91116/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a89a10928a11e882ff570cb5de53262f8fca9e71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/9bb5873b9551d6d6ed323cdbbddf1419c5af518d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_88032a884bd0f2ab4bb8b792a4056811ae48a8c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/5deabc76c2600e08fa255d529790108a405a1498/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6bacf0069bad235c3765f9a427018daca5cb588/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/24eb844e1cfb2636fc892ed763dd08f384e3facc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a58ad9f571e69c47a9f874df672120645a521066/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/252c9455095d37a16eda3f260527d9f19e60e696/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_19e4f3b063fd0c45b0168a8c988f33effc6a2fa8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/af38876b7634be40c7d0c4975d7560839f44cefa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c167ca6307123edd42968314a7a8617fdbc659fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/c9b526bc8ab869260f23ef982e00da8bff57d665/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ac8a61e94ceb19908e83f58ee3e77880c62a9cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/3fd1a8f68482e41eab2ab1cfaeb5e86317966e89/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf481b2af4d8f89935baf75972976b5681533176">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_842fc26c80195a616579de1571cc45cfa3509cae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/f3c24d781a2404975b396fd16216648b46debf3e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_644920b6032f7e3f32a0509e4179c27c7a046995/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/7781b55bc258ca9780bde02dc49476ce61548327/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b0ad493d89547f07d47f7248a356960b6bcfec8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/36aff3a596cc93d3fbee409124bc7cf8a6199954/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eb2898088f37caefb21f52bff7d9d40b6278955e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/ccc66ccf6dafb9732327aceced70141c8d8915d8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f08f8a06fc95f76722f66a769c79d3bb2c372c22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/6c7d0180efea19f297e13d183368f20fcd7b9cee/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8012d5493f632c489185b43058cbfb64588c134/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/61faecc56e110f24bc84f66471989f19f2ceb42d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7719ad95dd25d116a963252a3ec13ec7905bfc99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/b300e9755f17101fd2bf2376746688cb3be6dd80/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_91ea8b25d84a903a7d7878624a2bcdcf221fd190/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/makerspace/makerspace_hd/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_74822f5c6fb540ae1a704e318d58d1c95e01a4c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/d03263d35c906068c18156df352dfc6c1aca963a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f82d6c0aaf939846df38cb1a1346b5396d5d3a49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/2038b935d7e4010143396c942438058d61061f6a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_5416e248d51e6e3bebc56419362f428b0c882483.jar" />
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_29cb471d28c1eee1a4fa33512935bfc0b7e3a2c3/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/root/.android/build-cache/8a021256ede8206bccc5da3019efc23aa31a8087/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="21.1.2"
+        revision="25.0.3"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f61ea40b047d4b4109fca4eb410a4ef96f18096f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/a5f94b50992d4fc08c487616784b5a72c6216ecc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0fd533778ee178a80c4679c4d9914c5ea47d5a63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_ac342f17260710fcdf4b2d129687098a64b8d47c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/cecac7316a438ac07964c5aa31554cb1e3ecaf77/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9fd0741b137b27e00e227c1ab7e16ff15031989e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/364382edfcf92406134f052b2487400760bb4e51/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_df84d6d53761ff663d885d5a8caa0b9b2bba7b34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/052ff378d708465802a6bd89c4d07638bd8c17ab/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eff9a4a8fdd87e591d2d62e16d63a02d4b83353d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ad1930ae2e5f400439c642c7825dc5a19e52904a">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c9373abc77d66f73a39693e0b9c6b2f22b28478a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/1d50c45f287a57e77b6eb663c9bc08b87d7c5a86/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cedfab0964895a408e5dd8a68aee45e2bbdd3851/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/1cb5ca6dc97f5d77eac133987fd92c009478d57e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
         sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
-        <dex dex="C:\Users\lenovo\AndroidStudioProjects\RobotixApp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wallet-10.0.1_0481b00dd97aaee3923e1eef17a78a0012922277.jar" />
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e7b0430618a151a608c067bc55be0ba31bb326ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/441c2ae26bc4b2591befa0ec83f30cc5947611df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a64829ac085742b4570aab01e1b4dece214c459/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/cf7c235efd77f245f26216f60947b1238fa13fe0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f2fc69a9e2821157a5966f651ac64a2b055c99d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.android/build-cache/629d0bdc89d82a555f772042518c352c51832cbc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/media/makerspace/makerspace_hd/StudioProjects/RobotixApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_59e23bec1ab7521880f867d698ed45a5cd31ec9e/classes.dex" />
     </item>
 
 </items>
