@@ -58,8 +58,11 @@ public class NavigationDrawer extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.home) {
+        if (id == R.id.signin) {
+            Intent pushnot = new Intent("in.robotix.robotixapp.firebase.SIGNIN");
+            startActivity(pushnot);
+            finish();
+        } else if (id == R.id.home) {
             Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
             startActivity(pushnot);
             finish();

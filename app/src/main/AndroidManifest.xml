@@ -42,6 +42,25 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".opener.OpenerMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".firebase.GoogleSignInActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="in.robotix.robotixapp.firebase.SIGNIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
