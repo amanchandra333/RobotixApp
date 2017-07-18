@@ -22,7 +22,6 @@ public class Faqs extends AppCompatActivity {
 
 //        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //        View contentView = inflater.inflate(R.layout.faqs, null, false);
-//
 //        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
 //                ViewGroup.LayoutParams.MATCH_PARENT,
 //                ViewGroup.LayoutParams.MATCH_PARENT);
@@ -34,12 +33,12 @@ public class Faqs extends AppCompatActivity {
 
         toolbar.setNavigationIcon(android.support.v7.appcompat.R.drawable.abc_ic_ab_back_material);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-                                                 @Override
-                                                 public void onClick(View view) {
+            @Override
+            public void onClick(View view) {
 
-                                                     onBackPressed();
-                                                 }
-                                             });
+                onBackPressed();
+            }
+        });
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_faq);
         collapsingToolbar.setTitle("FAQ");

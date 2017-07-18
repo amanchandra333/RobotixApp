@@ -1,5 +1,7 @@
 package in.robotix.robotixapp.opener;
 
+import java.util.ArrayList;
+
 /**
  * Created by root on 16/5/17.
  */
@@ -7,6 +9,7 @@ package in.robotix.robotixapp.opener;
 public class OpenerHome {
     private String name;
     private int thumbnail;
+    private ArrayList<OpenerHome> openerList =new ArrayList<>();
     public OpenerHome() {
     }
 

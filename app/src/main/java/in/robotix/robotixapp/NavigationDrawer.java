@@ -30,7 +30,7 @@ public class NavigationDrawer extends AppCompatActivity
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main_navigation_drawer);
-        Toolbar mtoolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar mtoolbar = (Toolbar) findViewById(R.id.toolbar_drawer);
         setSupportActionBar(mtoolbar);
 
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
