@@ -96,8 +96,8 @@ public class NoticeBoard extends NavigationDrawer{
             }
             else if(title.length>0)
             {
-                ListView listview = (ListView) findViewById(R.id.n_listview);
-                listview.setAdapter(new notificationViewAdapter(this, title, details, time));
+//                ListView listview = (ListView) findViewById(R.id.n_listview);
+//                listview.setAdapter(new notificationViewAdapter(this, title, details, time));
             }
         }
     }

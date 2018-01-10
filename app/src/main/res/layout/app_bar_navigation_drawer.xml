@@ -48,14 +48,14 @@
                         android:id="@+id/love_music1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="random text"
+                        android:text="Technology Robotix Society"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/backdrop_title" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="more random stuff"
+                        android:text="Where Machines Dare"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/backdrop_subtitle" />
 

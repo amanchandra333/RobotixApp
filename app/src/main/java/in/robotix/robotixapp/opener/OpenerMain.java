@@ -53,7 +53,7 @@ public class OpenerMain extends NavigationDrawer {
         prepareOpeners();
 
         try {
-            Glide.with(this).load(R.drawable.rbtxlogo).into((ImageView) findViewById(R.id.backdrop1));
+            Glide.with(this).load(R.drawable.backdrop1).into((ImageView) findViewById(R.id.backdrop1));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -90,32 +90,30 @@ public class OpenerMain extends NavigationDrawer {
 
     private void prepareOpeners() {
         int[] covers = new int[]{
-                R.drawable.rbtxlogo,
-                R.drawable.rbtxlogo,
-                R.drawable.rbtxlogo,
-                R.drawable.rbtxlogo,
-                R.drawable.rbtxlogo,
-                R.drawable.rbtxlogo,
+                R.drawable.noticeboard_b,
+                R.drawable.events_b,
+                R.drawable.map_b,
+                R.drawable.aboutus_b,
+                R.drawable.contactus_b,
+                R.drawable.faq_b,
                 R.drawable.rbtxlogo,
                 R.drawable.rbtxlogo,};
 
-        OpenerHome a = new OpenerHome("True Romance", covers[0]);
+        OpenerHome a = new OpenerHome("Notice Board", covers[0]);
         openerList.add(a);
-
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("Events", covers[1]);
         openerList.add(a);
-
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("Campus Map", covers[2]);
         openerList.add(a);
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("About us", covers[3]);
         openerList.add(a);
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("Contact Us", covers[4]);
         openerList.add(a);
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("FAQ", covers[5]);
         openerList.add(a);
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("Random", covers[0]);
         openerList.add(a);
-        a = new OpenerHome("True Romance", covers[0]);
+        a = new OpenerHome("Random", covers[0]);
         openerList.add(a);
 
         adapter.setListContent(openerList);
@@ -123,7 +121,7 @@ public class OpenerMain extends NavigationDrawer {
         //adapter.notifyDataSetChanged();
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(5), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
@@ -131,16 +129,23 @@ public class OpenerMain extends NavigationDrawer {
             @Override
             public void onClick(View view, final int position) {
                 //Values are passing to activity & to fragment as well
-                Toast.makeText(OpenerMain.this, "Single Click on position        :"+position,
-                        Toast.LENGTH_SHORT).show();
-//                ImageView picture=(ImageView)view.findViewById(R.id.picture);
-//                picture.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Toast.makeText(WebviewActivity.this, "Single Click on Image :"+position,
-//                                Toast.LENGTH_SHORT).show();
-//                    }
-//                });
+                Intent pushnot;
+                if(position==0)
+                    pushnot = new Intent("in.robotix.robotixapp.NOTICEBOARD");
+                else if(position==1)
+                    pushnot = new Intent("in.robotix.robotixapp.EVENTS");
+                else if(position==2)
+                    pushnot = new Intent("in.robotix.robotixapp.MAPS");
+                else if(position==3)
+                    pushnot = new Intent("in.robotix.robotixapp.ABOUTUS");
+                else if(position==4)
+                    pushnot = new Intent("in.robotix.robotixapp.CONTACTUS");
+                else if(position==5)
+                    pushnot = new Intent("in.robotix.robotixapp.FAQS");
+                else
+                    pushnot = new Intent("in.robotix.robotixapp.TUTS");
+
+                startActivity(pushnot);
             }
 
             @Override

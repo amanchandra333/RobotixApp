@@ -4,6 +4,7 @@
     <string name="title_activity_events">Events</string>
     <string name="title_activity_aboutus">About Us</string>
     <string name="title_activity_faqs">FAQs</string>
+    <string name="title_activity_tuts">Tutorials</string>
     <string name="title_activity_contactus">Contact Us</string>
     <string name="title_activity_bricks">B.R.I.C.K.S</string>
     <string name="title_activity_conquest">Conquest</string>
@@ -25,6 +26,11 @@
     <string name="google_status_fmt">Google User: %s</string>
     <string name="firebase_status_fmt">Firebase User: %s</string>
 
+
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="xml_error">Error parsing XML.</string>
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="updated">Last updated:</string>
 
     <!-- =================   begin About Us ===========================-->
     <string name="who_are_we">ROBOTIX, is the annual robotics competition held during KSHITIJ, the Techno-Management Fest of IIT Kharagpur which is one of the biggest of its kind.</string>
