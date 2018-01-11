@@ -111,7 +111,7 @@ public class OpenerMain extends NavigationDrawer {
         openerList.add(a);
         a = new OpenerHome("FAQ", covers[5]);
         openerList.add(a);
-        a = new OpenerHome("Random", covers[0]);
+        a = new OpenerHome("Tutorials", covers[0]);
         openerList.add(a);
         a = new OpenerHome("Random", covers[0]);
         openerList.add(a);

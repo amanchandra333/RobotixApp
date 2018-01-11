@@ -113,8 +113,11 @@ public class Tutorials extends ListActivity {
         ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
         for (Entry entry : entries) {
             HashMap<String, String>     map = new HashMap<String, String>();
-            map.put("Title", entry.title);
-            menuItems.add(map);
+            String[] separated = entry.title.split("/");
+            if(separated[separated.length -3].equals("tutorial")) {
+                map.put("Title", separated[separated.length - 2]);
+                menuItems.add(map);
+            }
         }
 
         ListAdapter adapter = new SimpleAdapter(this, menuItems,
