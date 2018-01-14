@@ -102,6 +102,37 @@
         </LinearLayout>
 
 
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/container">
+
+                <ImageView
+                    android:src="@drawable/ayush_patnaik"
+                    style="@style/SummaryImage"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:id="@+id/Ayush_iv"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Ayush Patnaik"
+                    android:layout_below="@id/Ayush_iv"
+                    android:id="@+id/Ayush_tv"
+                    style="@style/heading1"
+                    android:autoText="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
