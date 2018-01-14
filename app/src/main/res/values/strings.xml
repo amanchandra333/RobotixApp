@@ -5,9 +5,9 @@
     <string name="title_activity_aboutus">About Us</string>
     <string name="title_activity_faqs">FAQs</string>
     <string name="title_activity_contactus">Contact Us</string>
-    <string name="title_activity_bricks">B.R.I.C.K.S</string>
-    <string name="title_activity_conquest">Conquest</string>
-    <string name="title_activity_bombdisposal">Bomb Disposal</string>
+    <string name="title_activity_polesapart">PolesApart</string>
+    <string name="title_activity_fortress">Fortress</string>
+    <string name="title_activity_stax">Stax</string>
     <string name="title_activity_noticeboard">Notice Board</string>
     <string name="title_activity_eventselector">Configure Notifications</string>
 
@@ -24,18 +24,18 @@
     </string>
     <string name="reachus1">Visit our website: www.robotix.in, for all information and updates on our activities throughout the session. Sign up to receive newsletters and important announcements in your email inbox.
 </string>
-<string name="reachus2">Keep in touch with us through social media we have official pages on Facebook and Twitter, and a YouTube Channel.
+    <string name="reachus2">Keep in touch with us through social media we have official pages on Facebook and Twitter, and a YouTube Channel.
 </string>
-    <string name="qs1">1. How to register for Robotix 2017 events?</string>
-    <string name="ans1">To register for any event of Robotix 2017, please visit the Kshitij 2017 website ( www.ktj.in )</string>
+    <string name="qs1">1. How to register for Robotix 2018 events?</string>
+    <string name="ans1">To register for any event of Robotix 2018, please visit the Kshitij 2018 website ( www.ktj.in )</string>
     <string name="qs2">2. What are the event dates?</string>
-    <string name="ans2">Robotix 2017 is scheduled to be held from the 27th January to 29th January, 2017</string>
+    <string name="ans2">Robotix 2018 is scheduled to be held from the 19th January to 21th January, 2018</string>
     <string name="qs3">3. Is there any pre-registration?</string>
-    <string name="ans3">You must register on the Kshitij 2017 website (www.ktj.in) before the fest in order to participate in Robotix 2017.</string>
+    <string name="ans3">You must register on the Kshitij 2018 website (www.ktj.in) before the fest in order to participate in Robotix 2018.</string>
     <string name="qs4">4. Where will I stay?</string>
-    <string name="ans4">Accommodation will be provided in the IIT Kharagpur campus itself. For more details regarding accommodation please visit the Acco tab of Kshitij 2017 website (www.ktj.in).</string>
+    <string name="ans4">Accommodation will be provided in the IIT Kharagpur campus itself. For more details regarding accommodation please visit the Acco tab of Kshitij 2018 website (www.ktj.in).</string>
     <string name="qs5">5. Do you charge anything for taking part in the Robotix competition?</string>
-    <string name="ans5">There will be a nominal registration fee (Rs. 1000) and a fully refundable security deposit (Rs. 100) which is a total of Rs.1100 that is to be provided via a Demand Draft. </string>
+    <string name="ans5">There will be a nominal registration fee (Rs. 1200) and a fully refundable security deposit (Rs. 100) which is a total of Rs.1300 that is to be provided via a Demand Draft. </string>
     <string name="qs6">6. Is there any submission deadline?</string>
     <string name="ans6">There is no submission of any kind for any Robotix Event. </string>
     <string name="qs7">7. Who is the point of contact for my event?</string>
@@ -45,19 +45,19 @@
     <string name="qs9">9. How do I reach Kharagpur?</string>
     <string name="ans9">Kharagpur is connected by direct train services to most major cities of the country. If your city does not have a direct rail route to Kharagpur, then catch a train to the City of Joy- Kolkata. KGP is situated 120 kms off Kolkata which is well connected to all the cities of India by rail and air. Kharagpur can be reached in about 2 hours by train from Howrah railway station of Kolkata or 3 hours by car from Kolkata Airport.  Train from Kolkata to Kharagpur are available round the clock. The list of local trains from Kolkata to KGP can be obtained from ( http://iitkgp.ac.in/trains.php ). </string>
     <string name="qs10">10. How to reach the IIT campus on arrival at Kharagpur?</string>
-    <string name="ans10">The first thing that you will notice on coming out of the KGP station will be the Participants Reception (PR) team, present there 24x7 from 1800 hrs, 26th of January. Periodic announcements will be made at the station addressing the participants. IIT KGP buses and the volunteers will be available to bring you to the campus. The volunteers will guide you to the Kshitij arena- The Vikramshila Complex. Moreover you can also take a cab to the IIT Campus. The fare from station to the IIT campus is Rs. 120 to Rs. 150 (depends on your negotiation skills) and it is a 10 minutes ride.</string>
+    <string name="ans10">The first thing that you will notice on coming out of the KGP station will be the Participants Reception (PR) team, present there 24x7 from 1800 hrs, 19th of January. Periodic announcements will be made at the station addressing the participants. IIT KGP buses and the volunteers will be available to bring you to the campus. The volunteers will guide you to the Kshitij arena- The Vikramshila Complex. Moreover you can also take a cab to the IIT Campus. The fare from station to the IIT campus is Rs. 120 to Rs. 150 (depends on your negotiation skills) and it is a 10 minutes ride.</string>
     <string name="qs11">11. What after reaching the Kshitij Arena?</string>
-    <string name="ans11">You will be taken to the Control Tent where you and your team/ contingent will have to register. For the registration you will have to bring the printout of the accommodation form that has been put up on the website. After that you will be provided accommodation in the campus. After Registration in the Kshitij Arena, you will need to report to the Robotix Helpdesk (Vikramshila Foyer). Look around for notices showing directions towards the helpdesk. Your robot registration will be done on the Robotix Helpdesk. Registrations begin at the Robotix Helpdesk after 1800 Hrs, 27th January, 2017.</string>
+    <string name="ans11">You will be taken to the Control Tent where you and your team/ contingent will have to register. For the registration you will have to bring the printout of the accommodation form that has been put up on the website. After that you will be provided accommodation in the campus. After Registration in the Kshitij Arena, you will need to report to the Robotix Helpdesk (Vikramshila Foyer). Look around for notices showing directions towards the helpdesk. Your robot registration will be done on the Robotix Helpdesk. Registrations begin at the Robotix Helpdesk after 1800 Hrs, 19th January, 2018.</string>
     <string name="qs12">12. I do not want to waste my time, can you tell me when exactly my event will be held in the 2 days?</string>
     <string name="ans12">Robotix Events are multiple stage events. The prelims would be starting from the first day and the event finals will be held on the last day of the fest.
-Besides, you can also interest yourself in other events and workshops held in the IIT Kharagpur campus during Kshitij 2017. [http://www.ktj.in].
+Besides, you can also interest yourself in other events and workshops held in the IIT Kharagpur campus during Kshitij 2018. [http://www.ktj.in].
 </string>
     <string name="qs13">13.Do I need to make any video/paper submission to be eligible to participate?</string>
     <string name="ans13">Submissions of any kind are not required before the event. Although, they will be appreciated and would be eligible for best mechanical design awards which are separate and do not form any criteria for eligibility. Please note that all participants must register on the website to be eligible to participate.</string>
     <string name="qs14">14. How many members are allowed in a single team?</string>
     <string name="ans14">At most four people can constitute of a team.</string>
     <string name="qs15">15. When will I get my prizes and certificates?</string>
-    <string name="ans15">The winners will get their prizes and certificates on the last day of Robotix 2017, i.e. 29th January, 2017 during the Prize distribution ceremony. Those who need to leave early can contact the Robotix Helpdesk. </string>
+    <string name="ans15">The winners will get their prizes and certificates on the last day of Robotix 2017, i.e. 21th January, 2018 during the Prize distribution ceremony. Those who need to leave early can contact the Robotix Helpdesk. </string>
     <string name="qs16">16. I need electronic components for my robot, where do I go?</string>
     <string name="ans16">We advise all participants to bring along sufficient spare electronic components. In case you need some help or suggestions with your robot, you can contact the Robotix HelpDesk. Inside Kharagpur, you can go to Chowdhury Electronics in Tech Market. You can refer the Campus Map for directions. You can contact Chowdhury Electronics on this number -   +91 943 441 5812.</string>
     <string name="qs17">17. Where can I find the tutorials to a given event?</string>

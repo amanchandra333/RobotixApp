@@ -8,23 +8,23 @@
 
 
     <Button
-        android:id="@+id/bombdisposal"
+        android:id="@+id/polesapart1"
         style="@style/DashboardButton"
-        android:drawableTop="@drawable/bombdisposal_m"
-        android:text="Bomb Disposal" />
+        android:drawableTop="@drawable/polesapart_m"
+        android:text="Poles Apart" />
 
 
     <Button
-        android:id="@+id/bricks"
+        android:id="@+id/stax"
         style="@style/DashboardButton"
-        android:drawableTop="@drawable/bricks_m"
-        android:text="B.R.I.C.K.S" />
+        android:drawableTop="@drawable/stax_m"
+        android:text="Stax" />
 
 
     <Button
-        android:id="@+id/conquest"
+        android:id="@+id/fortress"
         style="@style/DashboardButton"
-        android:drawableTop="@drawable/conquest_m"
-        android:text="Conquest" />
+        android:drawableTop="@drawable/fortress_m"
+        android:text="Fortress" />
 
 </in.robotix.robotixapp.DashboardLayout>

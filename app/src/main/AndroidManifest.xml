@@ -21,6 +21,9 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -38,25 +41,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.HOME" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Events"
             android:label="@string/title_activity_events"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.EVENTS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -66,6 +69,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.ABOUTUS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -75,6 +79,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.FAQS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -84,33 +89,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.CONTACTUS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Bricks"
-            android:label="@string/title_activity_bricks"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.BRICKS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Conquest"
-            android:label="@string/title_activity_conquest"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.CONQUEST" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".BombDisposal"
-            android:label="@string/title_activity_bombdisposal"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.BOMBDISPOSAL" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -120,6 +99,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.NOTICEBOARD" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -129,9 +109,41 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.MAPS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+                    android:name=".Stax"
+                    android:label="@string/title_activity_stax"
+                    android:theme="@style/AppTheme.NoActionBar">
+                    <intent-filter>
+                        <action android:name="in.robotix.robotixapp.STAX" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+        </activity>
+        <activity
+            android:name=".Polesapart"
+            android:label="@string/title_activity_polesapart"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="in.robotix.robotixapp.POLES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Fortress"
+            android:label="@string/title_activity_fortress"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="in.robotix.robotixapp.FORTRESS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
 
         <!-- Firebase Notifications -->
         <service android:name=".firebase.MyFirebaseMessagingService">
@@ -156,6 +168,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
     </application>
 
 </manifest>

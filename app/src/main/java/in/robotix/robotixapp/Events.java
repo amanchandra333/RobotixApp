@@ -23,32 +23,32 @@ public class Events extends NavigationDrawer {
                 ViewGroup.LayoutParams.MATCH_PARENT);
         mContentMain.addView(contentView, params);
 
-        Button bricks = (Button) findViewById(R.id.bricks);
-        bricks.setOnClickListener(new View.OnClickListener() {
+        Button stax = (Button) findViewById(R.id.stax);
+        stax.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent pushnot = new Intent("in.robotix.robotixapp.BRICKS");
+                Intent pushnot = new Intent("in.robotix.robotixapp.STAX");
                 startActivity(pushnot);
             }
         });
 
-        Button conquest = (Button) findViewById(R.id.conquest);
-        conquest.setOnClickListener(new View.OnClickListener() {
+        Button fortress = (Button) findViewById(R.id.fortress);
+        fortress.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent pushnot = new Intent("in.robotix.robotixapp.CONQUEST");
+                Intent pushnot = new Intent("in.robotix.robotixapp.FORTRESS");
                 startActivity(pushnot);
             }
         });
 
-        Button bombdisposal = (Button) findViewById(R.id.bombdisposal);
-        bombdisposal.setOnClickListener(new View.OnClickListener() {
+        Button polesapart = (Button) findViewById(R.id.polesapart1);
+        polesapart.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent pushnot = new Intent("in.robotix.robotixapp.BOMBDISPOSAL");
+                Intent pushnot = new Intent("in.robotix.robotixapp.POLES");
                 startActivity(pushnot);
             }
         });
