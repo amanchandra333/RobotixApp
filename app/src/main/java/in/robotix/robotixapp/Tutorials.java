@@ -1,11 +1,14 @@
 package in.robotix.robotixapp;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -90,6 +93,24 @@ public class Tutorials extends ListActivity {
         protected void onPostExecute(ListAdapter result) {
             setContentView(R.layout.activity_notice_board);
             setListAdapter(result);
+            ListView lv = getListView();
+            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        int position, long id) {
+                    // getting values from selected ListItem
+                    String name = ((TextView) view.findViewById(R.id.tut_title)).getText().toString();
+                    String link = ((TextView) view.findViewById(R.id.tut_link)).getText().toString();
+
+                    // Starting new intent
+                    Intent in = new Intent(getApplicationContext(), WebviewActivity.class);
+                    in.putExtra("Title", name);
+                    in.putExtra("Link", link);
+                    startActivity(in);
+
+                }
+            });
         }
     }
 
@@ -116,14 +137,15 @@ public class Tutorials extends ListActivity {
             String[] separated = entry.title.split("/");
             if(separated[separated.length -3].equals("tutorial")) {
                 map.put("Title", separated[separated.length - 2]);
+                map.put("Link", entry.title);
                 menuItems.add(map);
             }
         }
 
         ListAdapter adapter = new SimpleAdapter(this, menuItems,
                 R.layout.tut_row,
-                new String[] { "Title" }, new int[] {
-                R.id.tut_title });
+                new String[] { "Title", "Link" }, new int[] {
+                R.id.tut_title, R.id.tut_link });
 
         return adapter;
     }

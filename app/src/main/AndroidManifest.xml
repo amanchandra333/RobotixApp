@@ -43,7 +43,8 @@
         </activity>
         <activity
             android:name=".WebviewActivity"
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_tuts"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

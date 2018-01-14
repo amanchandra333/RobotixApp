@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
 
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:titleTextColor="#ffffff"/>-->
+
+    <!--<ExpandableListView-->
+        <!--android:id="@+id/android:list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+<!--</LinearLayout>-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -12,7 +28,6 @@
         android:layout_height="wrap_content"
         android:padding="3dip"
         android:layout_alignParentLeft="true"
-        android:background="@drawable/logo"
         android:layout_marginRight="5dip">
 
         <ImageView
@@ -27,12 +42,19 @@
         android:id="@+id/tut_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/thumbnail_tut"
+        android:layout_toRightOf="@+id/thumbnail_tut"
         android:text="Title"
-        android:textColor="#040404"
-        android:typeface="sans"
         android:textSize="20dip"
-        android:textStyle="bold"
-        android:layout_alignTop="@+id/thumbnail_tut"
-        android:layout_toRightOf="@+id/thumbnail_tut"/>
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/tut_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/tut_title"/>
 
 </RelativeLayout>

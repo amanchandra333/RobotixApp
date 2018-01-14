@@ -10,8 +10,14 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -27,56 +33,92 @@ public class WebviewActivity extends AppCompatActivity {
 
     private RelativeLayout mRelativeLayout;
     private WebView mWebView;
+    private AppBarLayout mAppbar;
     private Button mButtonBack;
     private Button mButtonForward;
 
-    private String mUrl="https://www.robotix.in/tutorial/auto/Color_Detection/";
+    private String mUrl, title;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Request window feature action bar
-        requestWindowFeature(Window.FEATURE_ACTION_BAR);
+//        requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                mUrl= null;
+                title = null;
+            } else {
+                mUrl= extras.getString("Link");
+                title= extras.getString("Title");
+            }
+        } else {
+            mUrl= (String) savedInstanceState.getSerializable("Link");
+            title= (String) savedInstanceState.getSerializable("Title");
+        }
         setContentView(R.layout.activity_webview);
+//        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//        View contentView = inflater.inflate(R.layout.activity_webview, null, false);
+//        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                ViewGroup.LayoutParams.MATCH_PARENT);
+//        mContentMain.addView(contentView, params);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tut);
+        setSupportActionBar(toolbar);
 
+        toolbar.setNavigationIcon(android.support.v7.appcompat.R.drawable.abc_ic_ab_back_material);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                onBackPressed();
+            }
+        });
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_tut);
+        collapsingToolbar.setTitle(title);
         // Get the application context
         mContext = getApplicationContext();
         // Get the activity
         mActivity = WebviewActivity.this;
 
         // Change the action bar color
-        getSupportActionBar().setBackgroundDrawable(
-                new ColorDrawable(Color.parseColor("#FF549DFC"))
-        );
+//        getSupportActionBar().setBackgroundDrawable(
+//                new ColorDrawable(Color.parseColor("#FF549DFC"))
+//        );
 
         // Get the widgets reference from XML layout
-        mRelativeLayout = (RelativeLayout) findViewById(R.id.rl);
+//        mRelativeLayout = (RelativeLayout) findViewById(R.id.rl);
         mWebView = (WebView) findViewById(R.id.web_view);
-        mButtonBack = (Button) findViewById(R.id.btn_back);
-        mButtonForward = (Button) findViewById(R.id.btn_forward);
+        mAppbar =  (AppBarLayout) findViewById(R.id.appbar);
+
+
+//        mButtonBack = (Button) findViewById(R.id.btn_back);
+//        mButtonForward = (Button) findViewById(R.id.btn_forward);
 
         // Request to render the web page
         renderWebPage(mUrl);
 
         // Set a click listener for back button
-        mButtonBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mWebView.canGoBack()) {
-                    mWebView.goBack();
-                }
-            }
-        });
-
-        // Set a click listener for forward button
-        mButtonForward.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mWebView.canGoForward()) {
-                    mWebView.goForward();
-                }
-            }
-        });
+//        mButtonBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mWebView.canGoBack()) {
+//                    mWebView.goBack();
+//                }
+//            }
+//        });
+//
+//        // Set a click listener for forward button
+//        mButtonForward.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mWebView.canGoForward()) {
+//                    mWebView.goForward();
+//                }
+//            }
+//        });
     }
 
     // Custom method to render a web page
@@ -90,19 +132,20 @@ public class WebviewActivity extends AppCompatActivity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 // Do something when page loading finished
-
+                mAppbar.setExpanded(false);
+                findViewById(R.id.loadingPanel).setVisibility(View.GONE);
                 // Check web view back history availability
                 if (mWebView.canGoBack()) {
-                    mButtonBack.setEnabled(true);
+//                    mButtonBack.setEnabled(true);
                 } else {
-                    mButtonBack.setEnabled(false);
-                }
+//                    mButtonBack.setEnabled(false);
+                }   
 
                 // Check web view forward history availability
                 if (mWebView.canGoForward()) {
-                    mButtonForward.setEnabled(true);
+//                    mButtonForward.setEnabled(true);
                 } else {
-                    mButtonForward.setEnabled(false);
+//                    mButtonForward.setEnabled(false);
                 }
             }
         });
