@@ -1,13 +1,18 @@
 package in.robotix.robotixapp;
 
+import android.app.ExpandableListActivity;
 import android.app.ListActivity;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ExpandableListAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.BroadcastReceiver;
@@ -25,6 +30,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
 import org.w3c.dom.Element;
 
@@ -40,6 +46,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Map;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -49,35 +56,58 @@ import in.robotix.robotixapp.XMLParser.Entry;
  * Created by amanchandra333 on 23/12/17.
  */
 
-public class Tutorials extends ListActivity {
+public class Tutorials extends ExpandableListActivity {
     private static final String URL =
             "https://2018.robotix.in/sitemap.xml";
     Context _mcontext;
+    private ExpandableListAdapter mAdapterView;
+    android.widget.ExpandableListView expandableListView;
+    private Toolbar supportActionBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notice_board);
+        setContentView(R.layout.activity_tut);
+
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tut);
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationIcon(android.support.v7.appcompat.R.drawable.abc_ic_ab_back_material);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_tut);
+        collapsingToolbar.setTitle("Tutorials");
+
         new DownloadXmlTask().execute(URL);
 
     }
 
-    private class DownloadXmlTask extends AsyncTask<String, Void, ListAdapter> {
+    private class DownloadXmlTask extends AsyncTask<String, Void, ExpandableListAdapter> {
 
         @Override
-        protected ListAdapter doInBackground(String... urls) {
-            ArrayList<HashMap<String, String>> dummy_menu = new ArrayList<HashMap<String, String>>();
+        protected ExpandableListAdapter doInBackground(String... urls) {
+            List<Map<String, String>> dummy_menu = new ArrayList<Map<String, String>>();
+            List<List<Map<String, String>>> dummy_list = new ArrayList<List<Map<String, String>>>();
             HashMap<String, String> dummy_map = new HashMap<String, String>();
             dummy_map.put("Title", "random");
             dummy_menu.add(dummy_map);
-            ListAdapter dummy;
-            if(_mcontext!=null) {
-                dummy = new SimpleAdapter(_mcontext, dummy_menu,
+            dummy_list.add(dummy_menu);
+            ExpandableListAdapter dummy;
+            if (_mcontext != null) {
+                dummy = new SimpleExpandableListAdapter(_mcontext, dummy_menu,
+                        R.layout.tut_row,
+                        new String[]{"Title"}, new int[]{
+                        R.id.tut_title},
+                        dummy_list,
                         R.layout.tut_row,
                         new String[]{"Title"}, new int[]{
                         R.id.tut_title});
-            }
-            else
+            } else
                 dummy = null;
 
             try {
@@ -90,31 +120,28 @@ public class Tutorials extends ListActivity {
         }
 
         @Override
-        protected void onPostExecute(ListAdapter result) {
-            setContentView(R.layout.activity_notice_board);
+        protected void onPostExecute(ExpandableListAdapter result) {
+            setContentView(R.layout.activity_tut);
             setListAdapter(result);
-            ListView lv = getListView();
-            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            expandableListView = getExpandableListView();
+            expandableListView.setOnChildClickListener(new android.widget.ExpandableListView.OnChildClickListener() {
+                public boolean onChildClick(android.widget.ExpandableListView parent, View v,
+                                            int groupPosition, int childPosition, long id) {
+                    String name = ((TextView) v.findViewById(R.id.tut_title)).getText().toString();
+                    String link = ((TextView) v.findViewById(R.id.tut_link)).getText().toString();
 
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int position, long id) {
-                    // getting values from selected ListItem
-                    String name = ((TextView) view.findViewById(R.id.tut_title)).getText().toString();
-                    String link = ((TextView) view.findViewById(R.id.tut_link)).getText().toString();
-
-                    // Starting new intent
                     Intent in = new Intent(getApplicationContext(), WebviewActivity.class);
                     in.putExtra("Title", name);
                     in.putExtra("Link", link);
                     startActivity(in);
 
+                    return false;
                 }
             });
         }
     }
 
-    private ListAdapter loadXmlFromNetwork(String urlString) throws XmlPullParserException, IOException {
+    private ExpandableListAdapter loadXmlFromNetwork(String urlString) throws XmlPullParserException, IOException {
         InputStream stream = null;
         XMLParser TutorialParser = new XMLParser();
         List<Entry> entries = null;
@@ -130,24 +157,116 @@ public class Tutorials extends ListActivity {
                 stream.close();
             }
         }
+        List<Map<String, String>> groupListItem = new ArrayList<Map<String, String>>();
+        List<List<Map<String, String>>> childListItem = new ArrayList<List<Map<String, String>>>();
 
-        ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
+        Map<String, String> category = new HashMap<String, String>();
+        category.put("Category", "Advanced");
+        groupListItem.add(category);
+        category.put("Category", "Arduino");
+        groupListItem.add(category);
+        category.put("Category", "Autonomous");
+        groupListItem.add(category);
+        category.put("Category", "AVR");
+        groupListItem.add(category);
+        category.put("Category", "Events");
+        groupListItem.add(category);
+        category.put("Category", "Image Processing");
+        groupListItem.add(category);
+        category.put("Category", "Mechanical");
+        groupListItem.add(category);
+        category.put("Category", "Other");
+        groupListItem.add(category);
+        category.put("Category", "Path Planning");
+        groupListItem.add(category);
+
         for (Entry entry : entries) {
-            HashMap<String, String>     map = new HashMap<String, String>();
+            Map<String, String> tut = new HashMap<String, String>();
+
+            List<Map<String, String>> advanced = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> arduino = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> auto = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> avr = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> event = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> ip = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> mechanical = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> other = new ArrayList<Map<String, String>>();
+            List<Map<String, String>> path = new ArrayList<Map<String, String>>();
+
             String[] separated = entry.title.split("/");
-            if(separated[separated.length -3].equals("tutorial")) {
-                map.put("Title", separated[separated.length - 2]);
-                map.put("Link", entry.title);
-                menuItems.add(map);
+            if (separated[separated.length - 3].equals("tutefeorial")) {
+                if (separated[separated.length - 2].equals("advanced")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    advanced.add(tut);
+                }
+                else if (separated[separated.length - 2].equals("arduino")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    arduino.add(tut);
+                }
+                else if (separated[separated.length - 2].equals("auto")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    auto.add(tut);
+                }
+                else if (separated[separated.length - 2].equals("avr")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    avr.add(tut);
+                }
+                else if (separated[separated.length - 2].equals("event")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    event.add(tut);
+                }
+                else if (separated[separated.length - 2].equals("imageprocessing")) {
+                    category.put("Title", separated[separated.length - 1]);
+                    category.put("Link", entry.title);
+                    ip.add(category);
+                }
+                else if (separated[separated.length - 2].equals("mechanical")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    mechanical.add(tut);
+                }
+                else if (separated[separated.length - 2].equals("other")) {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    other.add(tut);
+                } else {
+                    tut.put("Title", separated[separated.length - 1]);
+                    tut.put("Link", entry.title);
+                    path.add(tut);
+                }
+
             }
+
+            childListItem.add(advanced);
+            childListItem.add(arduino);
+            childListItem.add(auto);
+            childListItem.add(avr);
+            childListItem.add(event);
+            childListItem.add(ip);
+            childListItem.add(mechanical);
+            childListItem.add(other);
+            childListItem.add(path);
+
         }
 
-        ListAdapter adapter = new SimpleAdapter(this, menuItems,
+        mAdapterView = new SimpleExpandableListAdapter(
+                this,
+                groupListItem,
                 R.layout.tut_row,
-                new String[] { "Title", "Link" }, new int[] {
-                R.id.tut_title, R.id.tut_link });
+                new String[]{"Category"},
+                new int[]{R.id.tut_title},
+                childListItem,
+                R.layout.tut_row,
+                new String[]{"Title", "Link"},
+                new int[]{R.id.tut_title, R.id.tut_link}
+        );
 
-        return adapter;
+        return mAdapterView;
     }
 
     // Given a string representation of a URL, sets up a connection and gets
@@ -163,5 +282,9 @@ public class Tutorials extends ListActivity {
         conn.connect();
         InputStream stream = conn.getInputStream();
         return stream;
+    }
+
+    public void setSupportActionBar(Toolbar supportActionBar) {
+        this.supportActionBar = supportActionBar;
     }
 }
