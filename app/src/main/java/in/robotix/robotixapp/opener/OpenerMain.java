@@ -53,7 +53,7 @@ public class OpenerMain extends NavigationDrawer {
         prepareOpeners();
 
         try {
-            Glide.with(this).load(R.drawable.backdrop1).into((ImageView) findViewById(R.id.backdrop1));
+            Glide.with(this).load(R.drawable.backdrop_home).into((ImageView) findViewById(R.id.backdrop1));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -95,13 +95,12 @@ public class OpenerMain extends NavigationDrawer {
                 R.drawable.map_b,
                 R.drawable.aboutus_b,
                 R.drawable.contactus_b,
-                R.drawable.faq_b,
-                R.drawable.rbtxlogo,
-                R.drawable.rbtxlogo,};
+                R.drawable.faq_b,};
 
-        OpenerHome a = new OpenerHome("Notice Board", covers[0]);
+        OpenerHome a;
+        a = new OpenerHome("Explore Our Events", covers[1]);
         openerList.add(a);
-        a = new OpenerHome("Events", covers[1]);
+        a = new OpenerHome("Registrations for Robotix 2018", covers[0]);
         openerList.add(a);
         a = new OpenerHome("Campus Map", covers[2]);
         openerList.add(a);
@@ -118,10 +117,9 @@ public class OpenerMain extends NavigationDrawer {
 
         adapter.setListContent(openerList);
         recyclerView.setAdapter(adapter);
-        //adapter.notifyDataSetChanged();
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
+        adapter.notifyDataSetChanged();
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(5), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
@@ -130,73 +128,41 @@ public class OpenerMain extends NavigationDrawer {
             public void onClick(View view, final int position) {
                 //Values are passing to activity & to fragment as well
                 Intent pushnot;
-                if(position==0)
-                    pushnot = new Intent("in.robotix.robotixapp.NOTICEBOARD");
-                else if(position==1)
-                    pushnot = new Intent("in.robotix.robotixapp.EVENTS");
-                else if(position==2)
-                    pushnot = new Intent("in.robotix.robotixapp.MAPS");
-                else if(position==3)
-                    pushnot = new Intent("in.robotix.robotixapp.ABOUTUS");
-                else if(position==4)
-                    pushnot = new Intent("in.robotix.robotixapp.CONTACTUS");
-                else if(position==5)
-                    pushnot = new Intent("in.robotix.robotixapp.FAQS");
-                else
-                    pushnot = new Intent("in.robotix.robotixapp.TUTS");
+                switch (position) {
+                    case 0:
+                        pushnot = new Intent("in.robotix.robotixapp.EVENTS");
+                        break;
+                    case 1:
+                        pushnot = new Intent("in.robotix.robotixapp.WEBVIEW");
+                        pushnot.putExtra("Title", "Blog");
+                        pushnot.putExtra("Link", "https://2018.robotix.in/blog/registration-for-robotix-2018/");
+                        break;
+                    case 2:
+                        pushnot = new Intent("in.robotix.robotixapp.MAPS");
+                        break;
+                    case 3:
+                        pushnot = new Intent("in.robotix.robotixapp.ABOUTUS");
+                        break;
+                    case 4:
+                        pushnot = new Intent("in.robotix.robotixapp.CONTACTUS");
+                        break;
+                    case 5:
+                        pushnot = new Intent("in.robotix.robotixapp.FAQS");
+                        break;
+                    default:
+                        pushnot = new Intent("in.robotix.robotixapp.TUTS");
+                        break;
+                }
 
                 startActivity(pushnot);
             }
 
             @Override
             public void onLongClick(View view, int position) {
-                Toast.makeText(OpenerMain.this, "Long press on position :"+position,
-                        Toast.LENGTH_LONG).show();
             }
         }));
     }
 
-
-    public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
-
-        private int spanCount;
-        private int spacing;
-        private boolean includeEdge;
-
-        public GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
-            this.spanCount = spanCount;
-            this.spacing = spacing;
-            this.includeEdge = includeEdge;
-        }
-
-        @Override
-        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            int position = parent.getChildAdapterPosition(view); // item position
-            int column = position % spanCount; // item column
-
-            if (includeEdge) {
-                outRect.left = spacing - column * spacing / spanCount; // spacing - column * ((1f / spanCount) * spacing)
-                outRect.right = (column + 1) * spacing / spanCount; // (column + 1) * ((1f / spanCount) * spacing)
-
-                if (position < spanCount) { // top edge
-                    outRect.top = spacing;
-                }
-                outRect.bottom = spacing; // item bottom
-            } else {
-                outRect.left = column * spacing / spanCount; // column * ((1f / spanCount) * spacing)
-                outRect.right = spacing - (column + 1) * spacing / spanCount; // spacing - (column + 1) * ((1f /    spanCount) * spacing)
-                if (position >= spanCount) {
-                    outRect.top = spacing; // item top
-                }
-            }
-        }
-    }
-
-
-    private int dpToPx(int dp) {
-        Resources r = getResources();
-        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
-    }
 
     private Boolean exit = false;
     @Override
@@ -217,7 +183,5 @@ public class OpenerMain extends NavigationDrawer {
             drawer.closeDrawer(GravityCompat.START);
 
         }
-
     }
-
 }
