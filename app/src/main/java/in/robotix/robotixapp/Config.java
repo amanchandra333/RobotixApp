@@ -18,30 +18,31 @@ public class Config {
     private Context mContext;
     public Dictionary<String, String> contactDetails;
     public List<String> contactUsNames;
-    public List<String> bombDisposalNames;
-    public List<String> bricksNames;
-    public List<String> conquestNames;
+    public List<String> polesapartNames;
+    public List<String> staxNames;
+    public List<String> fortressNames;
     public static final String SHARED_PREF_ROBOTIX = "sp_robotix";
 
     public Config(Context mContext) {
         this.mContext = mContext;
         contactDetails = new Hashtable();
-        contactDetails.put("Manash", "{\"name\": \"Manash Pratim Das\",\"email\": \"manash@robotix.in\",\"phone\": \"09933890509\",\"facebook\": \"https://www.facebook.com/mpdmanash?fref=ts\"}");
-        contactDetails.put("Sourish", "{\"name\": \"Sourish Ghosh\",\"email\": \"sourish@robotix.in\",\"phone\": \"07980623482\",\"facebook\": \"https://www.facebook.com/Sourish69?fref=ts\"}");
-        contactDetails.put("Rajat", "{\"name\": \"Rajat Chourasia\",\"email\": \"rajat@robotix.in\",\"phone\": \"07872703173\",\"facebook\": \"\"}");
-        contactDetails.put("Shweta", "{\"name\": \"Shweta Gupta\",\"email\": \"shweta@robotix.in\",\"phone\": \"07872814560\",\"facebook\": \"https://www.facebook.com/shweta.gupta1196\"}");
-        contactDetails.put("Vraj", "{\"name\": \"Vraj Parikh\",\"email\": \"vraj@robotix.in\",\"phone\": \"08000981472\",\"facebook\": \"https://www.facebook.com/vraj.parikh?fref=ts\"}");
-        contactDetails.put("Shubhangi", "{\"name\": \"Shubhangi Bhusan\",\"email\": \"shubhangi@robotix.in\",\"phone\": \"09933909355\",\"facebook\": \"https://www.facebook.com/shubhibhushan?fref=ts\"}");
-        contactDetails.put("Shashwat", "{\"name\": \"Shashwat Gupta\",\"email\": \"shashwat@robotix.in\",\"phone\": \"07278275550\",\"facebook\": \"https://www.facebook.com/shashwatg3?fref=ts\"}");
-        contactDetails.put("Aaditya", "{\"name\": \"Aaditya Sanjay Boob\",\"email\": \"adityasanjay@robotix.in\",\"phone\": \"07709119333\",\"facebook\": \"https://www.facebook.com/profile.php?id=100001453733595&fref=ts\"}");
+        contactDetails.put("Aman", "{\"name\": \"Aman Chandra\",\"email\": \"aman.chandra@robotix.in\",\"phone\": \"08987272929\",\"facebook\": \"https://www.facebook.com/amanchandra333\"}");
+        contactDetails.put("Shivang", "{\"name\": \"Shivang Agarwal\",\"email\": \"shivang.agarwal@robotix.in\",\"phone\": \"9455538734\",\"facebook\": \"https://www.facebook.com/crazyshivang\"}");
+        contactDetails.put("Rohan", "{\"name\": \"Rohan Sitaniya\",\"email\": \"rohan.sitaniya@robotix.in\",\"phone\": \"07872703173\",\"facebook\": \"\"}");
+        contactDetails.put("Stuti", "{\"name\": \"Stuti Modi\",\"email\": \"stuti.modi@robotix.in\",\"phone\": \"09874590222\",\"facebook\": \"https://www.facebook.com/StutiModi09\"}");
+        contactDetails.put("Aditi", "{\"name\": \"Aditi Kambli\",\"email\": \"aditi.kambli@robotix.in\",\"phone\": \" 9932368081\",\"facebook\": \"aditi1997kambli@gmail.com\"}");
+        contactDetails.put("Swadha", "{\"name\": \"Swadha\",\"email\": \"swadha.gupta@robotix.in\",\"phone\": \"9425563726\",\"facebook\": \"https://www.facebook.com/swadha.gupta.77736\"}");
+        contactDetails.put("Vivek", "{\"name\": \"Vivek \",\"email\": \"vivek.mudgal@robotix.in\",\"phone\": \"7407777007\",\"facebook\": \"https://www.facebook.com/vivekmudgal10\"}");
+        contactDetails.put("Amit", "{\"name\": \"Amit Pathak\",\"email\": \"amit.pathak@robotix.in\",\"phone\": \"9431888031\",\"facebook\": \"https://www.facebook.com/amitpathak.iitkgp\"}");
+        contactDetails.put("Ayush", "{\"name\": \"Ayush Patnaik\",\"email\": \"ayush.patnaik@robotix.in\",\"phone\": \"8436932111\",\"facebook\": \"https://www.facebook.com/ayushpat7\"}");
         contactDetails.put("Chowdhury", "{\"name\": \"Chowdhury Electronics\",\"email\": \"\",\"phone\": \"09434415812\",\"facebook\": \"\"}");
         contactDetails.put("Carpenter", "{\"name\": \"Umesh carpenter\",\"email\": \"\",\"phone\": \"09434415812\",\"facebook\": \"\"}");
         contactDetails.put("Accomodation", "{\"name\": \"Sidhant Agarwal\",\"email\": \"\",\"phone\": \"09933940944\",\"facebook\": \"\"}");
 
-        contactUsNames = Arrays.asList("Shweta", "Shubhangi", "Vraj", "Shashwat", "Manash", "Sourish", "Aaditya", "Chowdhury", "Carpenter", "Accomodation");
-        bombDisposalNames = Arrays.asList("Shubhangi");
-        bricksNames = Arrays.asList("Vraj", "Shashwat", "Manash");
-        conquestNames = Arrays.asList("Sourish", "Aaditya");
+        contactUsNames = Arrays.asList("Aman", "Shivang", "Rohan", "Stuti", "Aditi", "Swadha", "Vivek", "Chowdhury", "Carpenter", "Accomodation");
+        polesapartNames = Arrays.asList("Amit", "Rohan");
+        staxNames = Arrays.asList("Aman", "Vivek", "Shivang");
+        fortressNames = Arrays.asList("Swadha");
     }
 
 

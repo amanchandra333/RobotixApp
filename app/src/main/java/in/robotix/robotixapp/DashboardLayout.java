@@ -5,6 +5,7 @@ package in.robotix.robotixapp;
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+
+import static android.support.v4.app.ActivityCompat.startActivity;
 
 public class DashboardLayout extends ViewGroup {
 
@@ -78,6 +81,14 @@ public class DashboardLayout extends ViewGroup {
                 resolveSize(mMaxChildWidth, widthMeasureSpec),
                 resolveSize(mMaxChildHeight, heightMeasureSpec));
     }
+
+
+
+
+//    public  void onBackPressed(){
+//        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+//        startActivity(pushnot);
+//    }
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
