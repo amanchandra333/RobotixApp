@@ -63,7 +63,6 @@
         </activity>
         <activity
             android:name=".opener.OpenerMain"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,20 +80,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.HOME" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".Events"
             android:label="@string/title_activity_events"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="in.robotix.robotixapp.EVENTS" />

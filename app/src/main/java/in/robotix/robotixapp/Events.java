@@ -45,7 +45,7 @@ public class Events extends NavigationDrawer {
         prepareOpeners();
 
         try {
-            Glide.with(this).load(R.drawable.backdrop_home).into((ImageView) findViewById(R.id.backdrop1));
+            Glide.with(this).load(R.drawable.event_bann).into((ImageView) findViewById(R.id.backdrop1));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -54,30 +54,11 @@ public class Events extends NavigationDrawer {
     private void initCollapsingToolbar() {
         final CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle(" ");
+        collapsingToolbar.setTitle("Events");
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.appbar);
         appBarLayout.setExpanded(true);
-
-        // hiding & showing the title when toolbar expanded & collapsed
-        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-            boolean isShow = false;
-            int scrollRange = -1;
-
-            @Override
-            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                if (scrollRange == -1) {
-                    scrollRange = appBarLayout.getTotalScrollRange();
-                }
-                if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.setTitle(getString(R.string.app_name));
-                    isShow = true;
-                } else if (isShow) {
-                    collapsingToolbar.setTitle(" ");
-                    isShow = false;
-                }
-            }
-        });
     }
+
     private void prepareOpeners() {
         int[] covers = new int[]{
                 R.drawable.polesapart_small,
@@ -85,11 +66,11 @@ public class Events extends NavigationDrawer {
                 R.drawable.stax_small,};
 
         OpenerHome a;
-        a = new OpenerHome("The Manual Event: Poles Apart", covers[1]);
-        openerList.add(a);
-        a = new OpenerHome("The IP Event: Fortress", covers[0]);
-        openerList.add(a);
         a = new OpenerHome("The Autonomous Event: STAX", covers[2]);
+        openerList.add(a);
+        a = new OpenerHome("The Manual Event: Poles Apart", covers[0]);
+        openerList.add(a);
+        a = new OpenerHome("The IP Event: Fortress", covers[1]);
         openerList.add(a);
 
         adapter.setListContent(openerList);

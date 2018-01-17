@@ -9,7 +9,7 @@
         <item
             android:id="@+id/home"
             android:icon="@drawable/home_icon"
-            android:title="Home" />
+            android:title="Tutorials" />
         <item
             android:id="@+id/noti"
             android:icon="@drawable/new_notice"

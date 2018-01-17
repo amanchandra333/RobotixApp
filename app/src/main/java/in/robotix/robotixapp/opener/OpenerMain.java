@@ -5,8 +5,6 @@ package in.robotix.robotixapp.opener;
  */
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.Rect;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,7 +15,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -163,7 +160,6 @@ public class OpenerMain extends NavigationDrawer {
         }));
     }
 
-
     private Boolean exit = false;
     @Override
     public void onBackPressed() {
@@ -181,7 +177,6 @@ public class OpenerMain extends NavigationDrawer {
             }, 3 * 1000);
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
-
         }
     }
 }

@@ -1,0 +1,420 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Points of Interests"
+        android:id="@+id/btn_poi" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="in.robotix.robotixapp.Maps"
+    android:layout_below="@+id/btn_poi"/>
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/btn_poi"
+    android:visibility="gone"
+    android:background="#000000"
+    android:padding="19dp"
+    android:id="@+id/menu">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="#000000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robotix Arena"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:textSize="16sp"
+            android:id="@+id/lbl_rbtx"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/map_text_color"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eateries and Restaurants"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_below="@+id/lbl_rbtx"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tikka"
+            android:textSize="18sp"
+            android:id="@+id/lbl_tikka"
+            android:layout_below="@+id/textView"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sahara Restaurant"
+            android:textSize="18sp"
+            android:id="@+id/lbl_sahara"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_tikka"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dreamland Restaurant"
+            android:textSize="18sp"
+            android:id="@+id/lbl_dreamland"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_sahara"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafe Coffee Day"
+            android:textSize="18sp"
+            android:id="@+id/lbl_ccd"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_dreamland"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iosys Food Xcess"
+            android:textSize="18sp"
+            android:id="@+id/lbl_ifx"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_ccd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATMs"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textView1"
+            android:layout_below="@+id/lbl_ifx"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axis Bank ATM"
+            android:textSize="18sp"
+            android:id="@+id/lbl_axisatm"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SBI ATM"
+            android:textSize="18sp"
+            android:id="@+id/lbl_sbiatm"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_axisatm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State Bank of India"
+            android:textSize="18sp"
+            android:id="@+id/lbl_sbi"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_sbiatm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+
+
+        <!--halls-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halls of Residence"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/lbl_sbi"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LBS Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_lbs"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. B. R. Ambedkar Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_bra"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_lbs"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nehru Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_nehru"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_bra"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LLR Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_llr"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_nehru"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RK Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_rk"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_llr"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RP Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_rp"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_rk"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MMM Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_mmm"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_rp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_vs"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_mmm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MS Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_ms"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_vs"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patel Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_patel"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_ms"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajad Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_ajad"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_patel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HJB Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_hjb"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_ajad"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JCB Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_jcb"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_hjb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MT Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_mt"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_jcb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SN Hall"
+            android:textSize="18sp"
+            android:id="@+id/lbl_sn"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_mt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/lbl_sn"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. C. Roy Hospital"
+            android:textSize="18sp"
+            android:id="@+id/lbl_bcr"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Building"
+            android:textSize="18sp"
+            android:id="@+id/lbl_mainb"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_bcr"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tech Market"
+            android:textSize="18sp"
+            android:id="@+id/lbl_techm"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:layout_below="@+id/lbl_mainb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/map_text_color" />
+    </RelativeLayout></ScrollView>
+
+</RelativeLayout>
