@@ -41,26 +41,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".WebviewActivity"
-            android:label="@string/title_activity_tuts"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.WEBVIEW" />
+        <!--<activity-->
+            <!--android:name=".WebviewActivity"-->
+            <!--android:label="@string/title_activity_tuts"-->
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="in.robotix.robotixapp.WEBVIEW" />-->
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Tutorials"
-            android:label="@string/title_activity_tuts"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.TUTS" />
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".Tutorials"-->
+            <!--android:label="@string/title_activity_tuts"-->
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="in.robotix.robotixapp.TUTS" />-->
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
         <activity
             android:name=".opener.OpenerMain"
             android:theme="@style/AppTheme.NoActionBar">
@@ -120,36 +120,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bricks"
-            android:label="@string/title_activity_bricks"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.BRICKS" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Conquest"
-            android:label="@string/title_activity_conquest"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.CONQUEST" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".BombDisposal"
-            android:label="@string/title_activity_bombdisposal"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.BOMBDISPOSAL" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".NoticeBoard"
             android:label="@string/title_activity_noticeboard"
             android:theme="@style/AppTheme.NoActionBar">
@@ -193,6 +163,36 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Stax"
+            android:label="@string/title_activity_stax"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="in.robotix.robotixapp.STAX" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Polesapart"
+            android:label="@string/title_activity_polesapart"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="in.robotix.robotixapp.POLES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Fortress"
+            android:label="@string/title_activity_fortress"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="in.robotix.robotixapp.FORTRESS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
     </application>
 
