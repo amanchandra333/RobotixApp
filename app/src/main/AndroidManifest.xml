@@ -120,32 +120,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bricks"
-            android:label="@string/title_activity_bricks"
+            android:name=".Stax"
+            android:label="@string/title_activity_stax"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="in.robotix.robotixapp.BRICKS" />
-
+                <action android:name="in.robotix.robotixapp.STAX" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Conquest"
-            android:label="@string/title_activity_conquest"
+            android:name=".Polesapart"
+            android:label="@string/title_activity_polesapart"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="in.robotix.robotixapp.CONQUEST" />
-
+                <action android:name="in.robotix.robotixapp.POLES" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".BombDisposal"
-            android:label="@string/title_activity_bombdisposal"
+            android:name=".Fortress"
+            android:label="@string/title_activity_fortress"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="in.robotix.robotixapp.BOMBDISPOSAL" />
-
+                <action android:name="in.robotix.robotixapp.FORTRESS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

@@ -46,12 +46,12 @@
                 style="@style/container">
 
                 <ImageView
-                    android:src="@drawable/shw"
+                    android:src="@drawable/stuti_modi"
                     style="@style/SummaryImage"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
                     android:gravity="center"
-                    android:id="@+id/Shweta_iv"
+                    android:id="@+id/Stuti_iv"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -59,14 +59,80 @@
                     android:layout_alignParentRight="true"
                     android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="Shweta Gupta"
-                    android:layout_below="@id/Shweta_iv"
-                    android:id="@+id/Shweta_tv"
+                    android:text="Stuti Modi"
+                    android:layout_below="@id/Stuti_iv"
+                    android:id="@+id/Stuti_tv"
                     style="@style/heading1"
                     android:autoText="false" />
             </RelativeLayout>
 
         </LinearLayout>
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/container">
+
+                <ImageView
+                    android:src="@drawable/aditi_kambli"
+                    style="@style/SummaryImage"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:id="@+id/Aditi_iv"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Aditi Kambli"
+                    android:layout_below="@id/Aditi_iv"
+                    android:id="@+id/Aditi_tv"
+                    style="@style/heading1"
+                    android:autoText="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/container">
+
+                <ImageView
+                    android:src="@drawable/ayush_patnaik"
+                    style="@style/SummaryImage"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:id="@+id/Ayush_iv"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Ayush Patnaik"
+                    android:layout_below="@id/Ayush_iv"
+                    android:id="@+id/Ayush_tv"
+                    style="@style/heading1"
+                    android:autoText="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
@@ -83,7 +149,7 @@
                 android:layout_alignParentRight="true"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Bomb Disposal"
+                android:text="Poles Apart"
                 style="@style/heading"
                 android:autoText="false" />
         </RelativeLayout>
@@ -97,12 +163,12 @@
                 style="@style/container">
 
                 <ImageView
-                    android:src="@drawable/shu"
+                    android:src="@drawable/rohan_sitaniya"
                     style="@style/SummaryImage"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
                     android:gravity="center"
-                    android:id="@+id/Shubhangi_iv"
+                    android:id="@+id/Rohan_iv"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -110,14 +176,48 @@
                     android:layout_alignParentRight="true"
                     android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="Shubhangi Bhushan"
-                    android:layout_below="@id/Shubhangi_iv"
-                    android:id="@+id/Shubhangi_tv"
+                    android:text="Rohan Sitaniya"
+                    android:layout_below="@id/Rohan_iv"
+                    android:id="@+id/Rohan_tv"
                     style="@style/heading1"
                     android:autoText="false" />
             </RelativeLayout>
 
         </LinearLayout>
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/container">
+
+                <ImageView
+                    android:src="@drawable/amit_pathak"
+                    style="@style/SummaryImage"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:id="@+id/Amit_iv"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Amit Pathak"
+                    android:layout_below="@id/Amit_iv"
+                    android:id="@+id/Amit_tv"
+                    style="@style/heading1"
+                    android:autoText="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
 
         <View
             android:layout_width="fill_parent"
@@ -135,7 +235,7 @@
                 android:layout_alignParentRight="true"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="B.R.I.C.K.S"
+                android:text="Stax"
                 style="@style/heading"
                 android:autoText="false" />
         </RelativeLayout>
@@ -158,12 +258,12 @@
                     style="@style/container">
 
                     <ImageView
-                        android:src="@drawable/vra"
+                        android:src="@drawable/shivang_agrawal"
                         style="@style/SummaryImage"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true"
                         android:gravity="center"
-                        android:id="@+id/Vraj_iv"
+                        android:id="@+id/Shivang_iv"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -171,9 +271,9 @@
                         android:layout_alignParentRight="true"
                         android:gravity="center"
                         android:layout_height="wrap_content"
-                        android:text="Vraj Parikh"
-                        android:layout_below="@id/Vraj_iv"
-                        android:id="@+id/Vraj_tv"
+                        android:text="Shivang Agrawal"
+                        android:layout_below="@id/Shivang_iv"
+                        android:id="@+id/Shivang_tv"
                         style="@style/heading1"
                         android:autoText="false" />
                 </RelativeLayout>
@@ -189,12 +289,12 @@
                     style="@style/container">
 
                     <ImageView
-                        android:src="@drawable/sha"
+                        android:src="@drawable/vivek_mudgal"
                         style="@style/SummaryImage"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true"
                         android:gravity="center"
-                        android:id="@+id/Shashwat_iv"
+                        android:id="@+id/Vivek_iv"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -202,9 +302,9 @@
                         android:layout_alignParentRight="true"
                         android:gravity="center"
                         android:layout_height="wrap_content"
-                        android:text="Shashwat Gupta"
-                        android:layout_below="@id/Shashwat_iv"
-                        android:id="@+id/Shashwat_tv"
+                        android:text="Vivek Mudgal"
+                        android:layout_below="@id/Vivek_iv"
+                        android:id="@+id/Vivek_tv"
                         style="@style/heading1"
                         android:autoText="false" />
                 </RelativeLayout>
@@ -221,12 +321,12 @@
                 style="@style/container">
 
                 <ImageView
-                    android:src="@drawable/man"
+                    android:src="@drawable/aman_chandra"
                     style="@style/SummaryImage"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
                     android:gravity="center"
-                    android:id="@+id/Manash_iv"
+                    android:id="@+id/Aman_iv"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -234,9 +334,9 @@
                     android:layout_alignParentRight="true"
                     android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="Manash Pratim Das"
-                    android:layout_below="@id/Manash_iv"
-                    android:id="@+id/Manash_tv"
+                    android:text="Aman Chandra"
+                    android:layout_below="@id/Aman_iv"
+                    android:id="@+id/Aman_tv"
                     style="@style/heading1"
                     android:autoText="false" />
             </RelativeLayout>
@@ -258,7 +358,7 @@
                 android:layout_alignParentRight="true"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Conquest"
+                android:text="Fortress"
                 style="@style/heading"
                 android:autoText="false" />
         </RelativeLayout>
@@ -281,12 +381,12 @@
                     style="@style/container">
 
                     <ImageView
-                        android:src="@drawable/sou"
+                        android:src="@drawable/swadha_gupta"
                         style="@style/SummaryImage"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true"
                         android:gravity="center"
-                        android:id="@+id/Sourish_iv"
+                        android:id="@+id/Swadha_iv"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -294,45 +394,45 @@
                         android:layout_alignParentRight="true"
                         android:gravity="center"
                         android:layout_height="wrap_content"
-                        android:text="Sourish Ghosh"
-                        android:layout_below="@id/Sourish_iv"
-                        android:id="@+id/Sourish_tv"
+                        android:text="Swadha Gupta"
+                        android:layout_below="@id/Swadha_iv"
+                        android:id="@+id/Swadha_tv"
                         style="@style/heading1"
                         android:autoText="false" />
                 </RelativeLayout>
             </LinearLayout>
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--style="@style/container"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
 
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    style="@style/container">
+            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--style="@style/container">-->
 
-                    <ImageView
-                        android:src="@drawable/aad"
-                        style="@style/SummaryImage"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:id="@+id/Aaditya_iv"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="Aaditya Sanjay Boob"
-                        android:layout_below="@id/Aaditya_iv"
-                        android:id="@+id/Aaditya_tv"
-                        style="@style/heading1"
-                        android:autoText="false" />
-                </RelativeLayout>
-            </LinearLayout>
+            <!--<ImageView-->
+            <!--android:src="@drawable/logo"-->
+            <!--style="@style/SummaryImage"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/Aaditya_iv"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Aaditya Sanjay Boob"-->
+            <!--android:layout_below="@id/Aaditya_iv"-->
+            <!--android:id="@+id/Aaditya_tv"-->
+            <!--style="@style/heading1"-->
+            <!--android:autoText="false" />-->
+            <!--</RelativeLayout>-->
         </LinearLayout>
+        <!--</LinearLayout>-->
 
         <View
             android:layout_width="fill_parent"

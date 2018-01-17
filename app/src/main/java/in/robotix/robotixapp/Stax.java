@@ -22,7 +22,7 @@ import in.robotix.robotixapp.Config;
  * Created by lenovo on 24-Jan-17.
  */
 
-public class Conquest extends NavigationDrawer{
+public class Stax extends NavigationDrawer{
     final Context context = this;
     Config mConfig;
 
@@ -30,7 +30,7 @@ public class Conquest extends NavigationDrawer{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_conquest, null, false);
+        View contentView = inflater.inflate(R.layout.activity_stax, null, false);
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
@@ -48,7 +48,7 @@ public class Conquest extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/event/conquest/"));
+                website.setData(Uri.parse("http://www.robotix.in/event/stax/"));
                 startActivity(website);
             }
         });
@@ -58,7 +58,7 @@ public class Conquest extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/assets/event/conquest/conquest.pdf"));
+                website.setData(Uri.parse("http://www.robotix.in/assets/event/stax/stax.pdf"));
                 startActivity(website);
             }
         });
@@ -69,11 +69,11 @@ public class Conquest extends NavigationDrawer{
                 dialog.setContentView(R.layout.event_contact_dialog);
                 dialog.setTitle("Contact Details");
 
-                TextView[] contact_nos = new TextView[mConfig.conquestNames.size()];
-                TextView[] contact_names = new TextView[mConfig.conquestNames.size()];
-                Button[] callButtons = new Button[mConfig.conquestNames.size()];
-                for(int i = 0; i < mConfig.conquestNames.size(); i++) {
-                    String head_name = mConfig.conquestNames.get(i);
+                TextView[] contact_nos = new TextView[mConfig.staxNames.size()];
+                TextView[] contact_names = new TextView[mConfig.staxNames.size()];
+                Button[] callButtons = new Button[mConfig.staxNames.size()];
+                for(int i = 0; i < mConfig.staxNames.size(); i++) {
+                    String head_name = mConfig.staxNames.get(i);
                     String head_number = "";
                     String head_full_name = "";
                     try{

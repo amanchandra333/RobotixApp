@@ -23,7 +23,7 @@ import in.robotix.robotixapp.Config;
  * Created by lenovo on 24-Jan-17.
  */
 
-public class BombDisposal extends NavigationDrawer{
+public class Polesapart extends NavigationDrawer{
     final Context context = this;
     Config mConfig;
 
@@ -31,7 +31,7 @@ public class BombDisposal extends NavigationDrawer{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_bombdisposal, null, false);
+        View contentView = inflater.inflate(R.layout.activity_polesapart, null, false);
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
@@ -49,7 +49,7 @@ public class BombDisposal extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/event/bombdisposal/"));
+                website.setData(Uri.parse("http://www.robotix.in/event/poles-apart/"));
                 startActivity(website);
             }
         });
@@ -59,7 +59,7 @@ public class BombDisposal extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/assets/event/bombdisposal/bombdisposal.pdf"));
+                website.setData(Uri.parse("http://www.robotix.in/assets/event/poles-apart/poles-apart.pdf"));
                 startActivity(website);
             }
         });
@@ -70,11 +70,11 @@ public class BombDisposal extends NavigationDrawer{
                 dialog.setContentView(R.layout.event_contact_dialog);
                 dialog.setTitle("Contact Details");
 
-                TextView[] contact_nos = new TextView[mConfig.bombDisposalNames.size()];
-                TextView[] contact_names = new TextView[mConfig.bombDisposalNames.size()];
-                Button[] callButtons = new Button[mConfig.bombDisposalNames.size()];
-                for(int i = 0; i < mConfig.bombDisposalNames.size(); i++) {
-                    String head_name = mConfig.bombDisposalNames.get(i);
+                TextView[] contact_nos = new TextView[mConfig.polesapartNames.size()];
+                TextView[] contact_names = new TextView[mConfig.polesapartNames.size()];
+                Button[] callButtons = new Button[mConfig.polesapartNames.size()];
+                for(int i = 0; i < mConfig.polesapartNames.size(); i++) {
+                    String head_name = mConfig.polesapartNames.get(i);
                     String head_number = "";
                     String head_full_name = "";
                     try{

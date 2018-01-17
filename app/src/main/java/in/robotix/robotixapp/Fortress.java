@@ -22,7 +22,7 @@ import in.robotix.robotixapp.Config;
  * Created by lenovo on 24-Jan-17.
  */
 
-public class Bricks extends NavigationDrawer{
+public class Fortress extends NavigationDrawer{
     final Context context = this;
     Config mConfig;
 
@@ -30,7 +30,7 @@ public class Bricks extends NavigationDrawer{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_bricks, null, false);
+        View contentView = inflater.inflate(R.layout.activity_fortress, null, false);
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
@@ -48,7 +48,7 @@ public class Bricks extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/event/bricks/"));
+                website.setData(Uri.parse("http://www.robotix.in/event/fortress/"));
                 startActivity(website);
             }
         });
@@ -58,7 +58,7 @@ public class Bricks extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/assets/event/bricks/bricks.pdf"));
+                website.setData(Uri.parse("http://www.robotix.in/assets/event/fortress/fortress.pdf"));
                 startActivity(website);
             }
         });
@@ -69,11 +69,11 @@ public class Bricks extends NavigationDrawer{
                 dialog.setContentView(R.layout.event_contact_dialog);
                 dialog.setTitle("Contact Details");
 
-                TextView[] contact_nos = new TextView[mConfig.bricksNames.size()];
-                TextView[] contact_names = new TextView[mConfig.bricksNames.size()];
-                Button[] callButtons = new Button[mConfig.bricksNames.size()];
-                for(int i = 0; i < mConfig.bricksNames.size(); i++) {
-                    String head_name = mConfig.bricksNames.get(i);
+                TextView[] contact_nos = new TextView[mConfig.fortressNames.size()];
+                TextView[] contact_names = new TextView[mConfig.fortressNames.size()];
+                Button[] callButtons = new Button[mConfig.fortressNames.size()];
+                for(int i = 0; i < mConfig.fortressNames.size(); i++) {
+                    String head_name = mConfig.fortressNames.get(i);
                     String head_number = "";
                     String head_full_name = "";
                     try{
