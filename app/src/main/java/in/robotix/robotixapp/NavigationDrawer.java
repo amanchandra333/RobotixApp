@@ -111,7 +111,7 @@ public class NavigationDrawer extends AppCompatActivity
             Intent updates = new Intent();
             updates.setAction(Intent.ACTION_VIEW);
             updates.addCategory(Intent.CATEGORY_BROWSABLE);
-            updates.setData(Uri.parse("http://blog.robotix.in/"));
+            updates.setData(Uri.parse("http://robotix.in/blog"));
             startActivity(updates);
         }else if (id == R.id.twitter) {
             Intent updates = new Intent();
@@ -123,7 +123,7 @@ public class NavigationDrawer extends AppCompatActivity
             Intent updates = new Intent();
             updates.setAction(Intent.ACTION_VIEW);
             updates.addCategory(Intent.CATEGORY_BROWSABLE);
-            updates.setData(Uri.parse("https://en.wikipedia.org/wiki/Robotix"));
+            updates.setData(Uri.parse("https://en.wikipedia.org/wiki/Robotix_(competition)"));
             startActivity(updates);
         }
 

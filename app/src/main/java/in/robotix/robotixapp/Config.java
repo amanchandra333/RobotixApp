@@ -30,7 +30,7 @@ public class Config {
         contactDetails.put("Shivang", "{\"name\": \"Shivang Agarwal\",\"email\": \"shivang.agarwal@robotix.in\",\"phone\": \"9455538734\",\"facebook\": \"https://www.facebook.com/crazyshivang\"}");
         contactDetails.put("Rohan", "{\"name\": \"Rohan Sitaniya\",\"email\": \"rohan.sitaniya@robotix.in\",\"phone\": \"07872703173\",\"facebook\": \"\"}");
         contactDetails.put("Stuti", "{\"name\": \"Stuti Modi\",\"email\": \"stuti.modi@robotix.in\",\"phone\": \"09874590222\",\"facebook\": \"https://www.facebook.com/StutiModi09\"}");
-        contactDetails.put("Aditi", "{\"name\": \"Aditi Kambli\",\"email\": \"aditi.kambli@robotix.in\",\"phone\": \" 9932368081\",\"facebook\": \"aditi1997kambli@gmail.com\"}");
+        contactDetails.put("Aditi", "{\"name\": \"Aditi Kambli\",\"email\": \"aditi.kambli@robotix.in\",\"phone\": \" 9932368081\",\"facebook\": \"https://www.facebook.com/aditi1997\"}");
         contactDetails.put("Swadha", "{\"name\": \"Swadha\",\"email\": \"swadha.gupta@robotix.in\",\"phone\": \"9425563726\",\"facebook\": \"https://www.facebook.com/swadha.gupta.77736\"}");
         contactDetails.put("Vivek", "{\"name\": \"Vivek \",\"email\": \"vivek.mudgal@robotix.in\",\"phone\": \"7407777007\",\"facebook\": \"https://www.facebook.com/vivekmudgal10\"}");
         contactDetails.put("Amit", "{\"name\": \"Amit Pathak\",\"email\": \"amit.pathak@robotix.in\",\"phone\": \"9431888031\",\"facebook\": \"https://www.facebook.com/amitpathak.iitkgp\"}");
