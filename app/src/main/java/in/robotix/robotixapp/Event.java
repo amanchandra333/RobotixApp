@@ -1,40 +1,95 @@
 package in.robotix.robotixapp;
 
-import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.view.LayoutInflater;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import org.json.JSONObject;
-import in.robotix.robotixapp.Config;
 
 /**
  * Created by lenovo on 24-Jan-17.
  */
 
-public class Stax extends NavigationDrawer{
+public class Event extends NavigationDrawer{
     final Context context = this;
     Config mConfig;
+    private String mUrl, mtitle, mPdf;
+    private int mID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_stax, null, false);
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT);
-        mContentMain.addView(contentView, params);
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                mPdf = null;
+                mUrl= null;
+                mtitle = null;
+            } else {
+                mID= extras.getInt("ID");
+                mUrl= extras.getString("Url");
+                mPdf= extras.getString("PDF");
+                mtitle= extras.getString("Title");
+            }
+        } else {
+            mID= (Integer) savedInstanceState.getSerializable("ID");
+            mUrl= (String) savedInstanceState.getSerializable("Url");
+            mPdf= (String) savedInstanceState.getSerializable("PDF");
+            mtitle= (String) savedInstanceState.getSerializable("Title");
+        }
+
+        setContentView(R.layout.activity_event);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_event);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(android.support.v7.appcompat.R.drawable.abc_ic_ab_back_material);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                onBackPressed();
+            }
+        });
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_event);
+        collapsingToolbar.setTitle(mtitle);
+
+        TextView category = (TextView)findViewById(R.id.textView3);
+        TextView ps = (TextView)findViewById(R.id.textView2);
+        TextView usp = (TextView)findViewById(R.id.textView1);
+        ImageView image = (ImageView)findViewById(R.id.event_pic);
+
+        if(mID==0){
+            category.setText("Category of event: AUTONOMOUS");
+            ps.setText("To build a robot which can rearrange blocks of different colours from a stack in a pattern by identifying the colours simultaneously moving across the stacks using line following.");
+            usp.setText("• Autonomous Traversal (Line Following)\n" +
+                    "                \\n• Colour Identification\n" +
+                    "                \\n• Sorting Algorithm");
+            image.setImageResource(R.drawable.stax);
+        }
+        else if(mID==1){
+            category.setText("Category of event: MANUAL");
+            ps.setText("• Changing interaxial distance.\n" +
+                    "                \\n• Gripping and lifting mechanism.\n" +
+                    "                \\n• Placing blocks in their respective places.");
+            image.setImageResource(R.drawable.polesapart);
+        }
+        else{
+            category.setText("Category of event: COMPUTER VISION");
+            ps.setText("Build an image processing robot that can recognise useful patterns by pattern recognition while avoiding other obstacles. The video feed of the arena will be given by an overhead camera.");
+            usp.setText("• Template matching\n" +
+                    "                \\n• Pattern Recognition\n" +
+                    "                \\n• Image segmentation\n" +
+                    "                \\n• Autonomous traversal");
+            image.setImageResource(R.drawable.fortress);
+        }
+
         mConfig = new Config(this);
 
         // Buttons
@@ -48,7 +103,7 @@ public class Stax extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/event/stax/"));
+                website.setData(Uri.parse(mUrl));
                 startActivity(website);
             }
         });
@@ -58,7 +113,7 @@ public class Stax extends NavigationDrawer{
                 Intent website= new Intent();
                 website.setAction(Intent.ACTION_VIEW);
                 website.addCategory(Intent.CATEGORY_BROWSABLE);
-                website.setData(Uri.parse("http://www.robotix.in/assets/event/stax/stax.pdf"));
+                website.setData(Uri.parse(mPdf));
                 startActivity(website);
             }
         });
@@ -69,11 +124,11 @@ public class Stax extends NavigationDrawer{
                 dialog.setContentView(R.layout.event_contact_dialog);
                 dialog.setTitle("Contact Details");
 
-                TextView[] contact_nos = new TextView[mConfig.staxNames.size()];
-                TextView[] contact_names = new TextView[mConfig.staxNames.size()];
-                Button[] callButtons = new Button[mConfig.staxNames.size()];
-                for(int i = 0; i < mConfig.staxNames.size(); i++) {
-                    String head_name = mConfig.staxNames.get(i);
+                TextView[] contact_nos = new TextView[mConfig.eventNames.get(mID).size()];
+                TextView[] contact_names = new TextView[mConfig.eventNames.get(mID).size()];
+                Button[] callButtons = new Button[mConfig.eventNames.get(mID).size()];
+                for(int i = 0; i < mConfig.eventNames.get(mID).size(); i++) {
+                    String head_name = mConfig.eventNames.get(mID).get(i);
                     String head_number = "";
                     String head_full_name = "";
                     try{
@@ -116,5 +171,11 @@ public class Stax extends NavigationDrawer{
                 startActivity(pushnot);
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        startActivity(pushnot);
+        finish();
     }
 }

@@ -65,7 +65,7 @@
             android:name=".opener.OpenerMain"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="in.robotix.robotixapp.HOME" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -119,31 +119,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Stax"
-            android:label="@string/title_activity_stax"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.STAX" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Polesapart"
-            android:label="@string/title_activity_polesapart"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.POLES" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <activity
-            android:name=".Fortress"
-            android:label="@string/title_activity_fortress"
+            android:name=".Event"
+            android:label="@string/title_activity_event"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="in.robotix.robotixapp.FORTRESS" />
+                <action android:name="in.robotix.robotixapp.EVENT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

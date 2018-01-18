@@ -1,6 +1,7 @@
 package in.robotix.robotixapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,13 @@ public class Faqs extends AppCompatActivity {
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_faq);
         collapsingToolbar.setTitle("FAQ");
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        startActivity(pushnot);
+        finish();
     }
 
 }

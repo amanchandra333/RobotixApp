@@ -3,6 +3,7 @@ package in.robotix.robotixapp;
 import android.*;
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -694,5 +695,12 @@ public class Maps extends AppCompatActivity implements OnMapReadyCallback {
 //        mMap.addMarker(new MarkerOptions().position(rbtx).title("Marker in Robotix Arena"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(rbtx));
         setUpMap();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        startActivity(pushnot);
+        finish();
     }
 }

@@ -21,6 +21,7 @@ public class Config {
     public List<String> polesapartNames;
     public List<String> staxNames;
     public List<String> fortressNames;
+    public List<List<String>> eventNames;
     public static final String SHARED_PREF_ROBOTIX = "sp_robotix";
 
     public Config(Context mContext) {
@@ -43,5 +44,6 @@ public class Config {
         polesapartNames = Arrays.asList("Amit", "Rohan");
         staxNames = Arrays.asList("Aman", "Vivek", "Shivang");
         fortressNames = Arrays.asList("Swadha");
+        eventNames = Arrays.asList(Arrays.asList("Aman", "Vivek", "Shivang"), Arrays.asList("Amit", "Rohan"),  Arrays.asList("Swadha"));
     }
 }

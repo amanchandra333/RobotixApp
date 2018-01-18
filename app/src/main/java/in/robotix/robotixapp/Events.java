@@ -88,13 +88,25 @@ public class Events extends NavigationDrawer {
                 Intent pushnot;
                 switch (position) {
                     case 0:
-                        pushnot = new Intent("in.robotix.robotixapp.BOMBDISPOSAL");
+                        pushnot = new Intent("in.robotix.robotixapp.EVENT");
+                        pushnot.putExtra("Title", "Stax");
+                        pushnot.putExtra("ID",0 );
+                        pushnot.putExtra("Url", "http://www.robotix.in/event/stax/");
+                        pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/stax/stax.pdf");
                         break;
                     case 1:
-                        pushnot = new Intent("in.robotix.robotixapp.CONQUEST");
+                        pushnot = new Intent("in.robotix.robotixapp.EVENT");
+                        pushnot.putExtra("Title", "Poles Apart");
+                        pushnot.putExtra("ID", 1);
+                        pushnot.putExtra("Url", "http://www.robotix.in/event/polesapart/");
+                        pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/polesapart/polesapart.pdf");
                         break;
                     default:
-                        pushnot = new Intent("in.robotix.robotixapp.BRICKS");
+                        pushnot = new Intent("in.robotix.robotixapp.EVENT");
+                        pushnot.putExtra("Title", "Fortress");
+                        pushnot.putExtra("ID", 2);
+                        pushnot.putExtra("Url", "http://www.robotix.in/event/fortress/");
+                        pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/fortress/fortress.pdf");
                         break;
                 }
                 startActivity(pushnot);
@@ -105,4 +117,5 @@ public class Events extends NavigationDrawer {
             }
         }));
     }
+
 }

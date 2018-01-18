@@ -6,9 +6,7 @@
     <string name="title_activity_faqs">FAQs</string>
     <string name="title_activity_tuts">Tutorials</string>
     <string name="title_activity_contactus">Contact Us</string>
-    <string name="title_activity_polesapart">PolesApart</string>
-    <string name="title_activity_fortress">Fortress</string>
-    <string name="title_activity_stax">Stax</string>
+    <string name="title_activity_event">Event</string>
     <string name="title_activity_noticeboard">Notice Board</string>
     <string name="title_activity_eventselector">Configure Notifications</string>
 

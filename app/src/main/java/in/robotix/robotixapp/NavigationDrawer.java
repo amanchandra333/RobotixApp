@@ -43,7 +43,9 @@ public class NavigationDrawer extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+            startActivity(pushnot);
+            finish();
         }
     }
 
