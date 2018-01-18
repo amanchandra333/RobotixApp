@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.RelativeLayout;
 
 public class WebviewActivity extends AppCompatActivity {
     private Context mContext;
@@ -25,7 +27,7 @@ public class WebviewActivity extends AppCompatActivity {
     private WebView mWebView;
     private AppBarLayout mAppbar;
     private CollapsingToolbarLayout collapsingToolbar;
-    private AppBarLayout.LayoutParams params;
+    private RelativeLayout loading;
 
     private String mUrl, title;
 
@@ -59,13 +61,20 @@ public class WebviewActivity extends AppCompatActivity {
             }
         });
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_tut);
-        params = (AppBarLayout.LayoutParams) collapsingToolbar.getLayoutParams();
         collapsingToolbar.setTitle(title);
+
+        if(mUrl.equals("rand")) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            XMLParser caller = new XMLParser();
+            mUrl = caller.TutorialGetter();
+        }
 
         mContext = getApplicationContext();
         mActivity = WebviewActivity.this;
         mWebView = (WebView) findViewById(R.id.web_view);
         mAppbar =  (AppBarLayout) findViewById(R.id.appbar);
+        loading = (RelativeLayout) findViewById(R.id.loadingPanel);
 
         renderWebPage(mUrl);
     }
@@ -75,13 +84,14 @@ public class WebviewActivity extends AppCompatActivity {
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                // Do something on page loading started
+
             }
 
             @Override
             public void onPageFinished(WebView view, String url) {
                 // Do something when page loading finished
                 mAppbar.setExpanded(false);
+                loading.setVisibility(View.GONE);
 //                params.setScrollFlags(0);
             }
         });

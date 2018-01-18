@@ -7,9 +7,9 @@
             android:icon="@drawable/rbtxlogo"
             android:title="Sign In" />
         <item
-            android:id="@+id/home"
+            android:id="@+id/rand_tut"
             android:icon="@drawable/home_icon"
-            android:title="Tutorials" />
+            android:title="Tutorial of the Moment" />
         <item
             android:id="@+id/noti"
             android:icon="@drawable/new_notice"

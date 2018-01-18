@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import in.robotix.robotixapp.NavigationDrawer;
 import in.robotix.robotixapp.R;
@@ -105,11 +106,11 @@ public class OpenerMain extends NavigationDrawer {
         openerList.add(a);
         a = new OpenerHome("Contact Us", covers[4]);
         openerList.add(a);
-        a = new OpenerHome("FAQ", covers[5]);
+        a = new OpenerHome("Frequently Asked Questions", covers[5]);
         openerList.add(a);
-        a = new OpenerHome("Tutorials", covers[0]);
+        a = new OpenerHome("Our Collection of Tutorials", covers[0]);
         openerList.add(a);
-        a = new OpenerHome("Random", covers[0]);
+        a = new OpenerHome("Notice Board", covers[0]);
         openerList.add(a);
 
         adapter.setListContent(openerList);
@@ -146,8 +147,13 @@ public class OpenerMain extends NavigationDrawer {
                     case 5:
                         pushnot = new Intent("in.robotix.robotixapp.FAQS");
                         break;
+                    case 6:
+                        pushnot = new Intent("in.robotix.robotixapp.WEBVIEW");
+                        pushnot.putExtra("Title", "Tutorials");
+                        pushnot.putExtra("Link", "https://2018.robotix.in/tutorial/");
+                        break;
                     default:
-                        pushnot = new Intent("in.robotix.robotixapp.TUTS");
+                        pushnot = new Intent("in.robotix.robotixapp.NOTICEBOARD");
                         break;
                 }
 

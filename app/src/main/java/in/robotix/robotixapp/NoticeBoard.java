@@ -5,35 +5,42 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.google.firebase.messaging.FirebaseMessaging;
-
-import in.robotix.robotixapp.Config;
 import in.robotix.robotixapp.firebase.FirebaseConfig;
 
 /**
  * Created by lenovo on 24-Jan-17.
  */
 
-public class NoticeBoard extends NavigationDrawer{
+public class NoticeBoard extends AppCompatActivity{
     private BroadcastReceiver mRegistrationBroadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_notice_board, null, false);
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT);
-        mContentMain.addView(contentView, params);
+        setContentView(R.layout.activity_notice_board);
+
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_not);
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationIcon(android.support.v7.appcompat.R.drawable.abc_ic_ab_back_material);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                onBackPressed();
+            }
+        });
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_not);
+        collapsingToolbar.setTitle("Notice Board");
 
         // Load Notices
         SharedPreferences pref = getApplicationContext().getSharedPreferences(Config.SHARED_PREF_ROBOTIX, 0);
@@ -96,8 +103,8 @@ public class NoticeBoard extends NavigationDrawer{
             }
             else if(title.length>0)
             {
-//                ListView listview = (ListView) findViewById(R.id.n_listview);
-//                listview.setAdapter(new notificationViewAdapter(this, title, details, time));
+                ListView listview = (ListView) findViewById(R.id.listview_not);
+                listview.setAdapter(new notificationViewAdapter(this, title, details, time));
             }
         }
     }
@@ -110,4 +117,10 @@ public class NoticeBoard extends NavigationDrawer{
         Log.e("NoticeBoard", "Overwritten to notices sp: " + "");
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        startActivity(pushnot);
+        finish();
+    }
 }

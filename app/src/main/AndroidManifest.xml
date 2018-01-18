@@ -52,16 +52,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Tutorials"
-            android:label="@string/title_activity_tuts"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="in.robotix.robotixapp.TUTS" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".opener.OpenerMain"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v4.content.LocalBroadcastManager;
-import android.text.TextUtils;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
@@ -19,8 +18,6 @@ import org.json.JSONObject;
 
 import in.robotix.robotixapp.Config;
 import in.robotix.robotixapp.NoticeBoard;
-import in.robotix.robotixapp.firebase.FirebaseConfig;
-import in.robotix.robotixapp.firebase.NotificationUtils;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 

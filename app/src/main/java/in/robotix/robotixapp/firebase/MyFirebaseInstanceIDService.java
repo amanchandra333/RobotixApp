@@ -43,9 +43,9 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         registrationComplete.putExtra("token", refreshedToken);
         LocalBroadcastManager.getInstance(this).sendBroadcast(registrationComplete);
         FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_GLOBAL);
-        FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_BRICKS);
-        FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_BOMBDISPOSAL);
-        FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_CONQUEST);
+        FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_STAX);
+        FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_POLESAPART);
+        FirebaseMessaging.getInstance().subscribeToTopic(FirebaseConfig.TOPIC_FORTRESS);
     }
 
     private void sendRegistrationToServer(final String token) {

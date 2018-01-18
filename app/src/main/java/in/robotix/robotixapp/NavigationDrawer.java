@@ -58,8 +58,10 @@ public class NavigationDrawer extends AppCompatActivity
             Intent pushnot = new Intent("in.robotix.robotixapp.firebase.SIGNIN");
             startActivity(pushnot);
             finish();
-        } else if (id == R.id.home) {
-            Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        } else if (id == R.id.rand_tut) {
+            Intent pushnot = new Intent("in.robotix.robotixapp.WEBVIEW");
+            pushnot.putExtra("Title", "Tutorial");
+            pushnot.putExtra("Link", "rand");
             startActivity(pushnot);
             finish();
         } else if (id == R.id.noti) {

@@ -7,9 +7,9 @@ package in.robotix.robotixapp.firebase;
 public class FirebaseConfig {
     // global topic to receive app wide push notifications
     public static final String TOPIC_GLOBAL = "global";
-    public static final String TOPIC_BOMBDISPOSAL = "bombdisposal";
-    public static final String TOPIC_CONQUEST = "conquest";
-    public static final String TOPIC_BRICKS = "bricks";
+    public static final String TOPIC_POLESAPART = "bombdisposal";
+    public static final String TOPIC_FORTRESS = "conquest";
+    public static final String TOPIC_STAX = "bricks";
 
     // broadcast receiver intent filters
     public static final String REGISTRATION_COMPLETE = "registrationComplete";

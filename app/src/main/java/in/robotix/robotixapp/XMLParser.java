@@ -1,26 +1,68 @@
 package in.robotix.robotixapp;
 
-import android.util.Log;
 import android.util.Xml;
-import android.widget.Toast;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by amanchandra333 on 23/12/17.
  */
 
 public class XMLParser {
+    private static final String URL =
+                "https://2018.robotix.in/sitemap.xml";
     private static final String ns = null;
     // We don't use namespaces
 
-    public List parse(InputStream in) throws XmlPullParserException, IOException {
+    public String TutorialGetter(){
+        try {
+            return generateRandom(URL);
+        } catch (IOException e) {
+            return "load";
+        } catch (XmlPullParserException e) {
+            return "load";
+        }
+    }
+
+    private String generateRandom(String url) throws XmlPullParserException, IOException{
+        InputStream stream = null;
+        List<Entry> entries = null;
+        String title = null;
+
+        try {
+            stream = downloadUrl(url);
+            entries = parse(stream);
+            // Makes sure that the InputStream is closed after the app is
+            // finished using it.
+        } finally {
+            if (stream != null) {
+                stream.close();
+            }
+        }
+
+        ArrayList<String> tutlist = new ArrayList<String>();
+        for (Entry entry : entries) {
+            String[] separated = entry.title.split("/");
+            if (separated[separated.length - 3].equals("tutorial")) {
+                tutlist.add(entry.title);
+            }
+        }
+        Random randomGenerator = new Random();
+        int index = randomGenerator.nextInt(tutlist.size());
+
+        return tutlist.get(index);
+    }
+
+    private List parse(InputStream in) throws XmlPullParserException, IOException {
         try {
             XmlPullParser parser = Xml.newPullParser();
             parser.setFeature(Xml.FEATURE_RELAXED,true);
@@ -154,5 +196,18 @@ public class XMLParser {
                     break;
             }
         }
+    }
+
+    private InputStream downloadUrl(String urlString) throws IOException {
+        URL url = new URL(urlString);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setReadTimeout(10000 /* milliseconds */);
+        conn.setConnectTimeout(15000 /* milliseconds */);
+        conn.setRequestMethod("GET");
+        conn.setDoInput(true);
+        // Starts the query
+        conn.connect();
+        InputStream stream = conn.getInputStream();
+        return stream;
     }
 }

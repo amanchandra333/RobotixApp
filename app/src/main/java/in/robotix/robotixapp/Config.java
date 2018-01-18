@@ -1,13 +1,11 @@
 package in.robotix.robotixapp;
 
 import android.content.Context;
-import android.os.Bundle;
 
 import java.util.Arrays;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
-import java.util.StringTokenizer;
 
 /**
  * Created by lenovo on 24-Jan-17.
