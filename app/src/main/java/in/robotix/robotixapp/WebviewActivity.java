@@ -6,6 +6,7 @@ package in.robotix.robotixapp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -95,5 +96,11 @@ public class WebviewActivity extends AppCompatActivity {
         mWebView.getSettings().setAppCachePath(mContext.getCacheDir().getPath());
         mWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         mWebView.loadUrl(urlToRender);
+    }
+    @Override
+    public void onBackPressed() {
+        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        startActivity(pushnot);
+        finish();
     }
 }

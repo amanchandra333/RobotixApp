@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -13,7 +11,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -86,23 +83,21 @@ public class Events extends NavigationDrawer {
             public void onClick(View view, final int position) {
                 //Values are passing to activity & to fragment as well
                 Intent pushnot;
+                pushnot = new Intent("in.robotix.robotixapp.EVENT");
                 switch (position) {
                     case 0:
-                        pushnot = new Intent("in.robotix.robotixapp.EVENT");
                         pushnot.putExtra("Title", "Stax");
                         pushnot.putExtra("ID",0 );
                         pushnot.putExtra("Url", "http://www.robotix.in/event/stax/");
                         pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/stax/stax.pdf");
                         break;
                     case 1:
-                        pushnot = new Intent("in.robotix.robotixapp.EVENT");
                         pushnot.putExtra("Title", "Poles Apart");
                         pushnot.putExtra("ID", 1);
-                        pushnot.putExtra("Url", "http://www.robotix.in/event/polesapart/");
+                        pushnot.putExtra("Url", "http://www.robotix.in/event/poles-apart/");
                         pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/polesapart/polesapart.pdf");
                         break;
                     default:
-                        pushnot = new Intent("in.robotix.robotixapp.EVENT");
                         pushnot.putExtra("Title", "Fortress");
                         pushnot.putExtra("ID", 2);
                         pushnot.putExtra("Url", "http://www.robotix.in/event/fortress/");
@@ -110,6 +105,7 @@ public class Events extends NavigationDrawer {
                         break;
                 }
                 startActivity(pushnot);
+                finish();
             }
 
             @Override

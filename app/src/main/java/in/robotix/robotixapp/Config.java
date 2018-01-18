@@ -40,7 +40,7 @@ public class Config {
         contactDetails.put("Carpenter", "{\"name\": \"Umesh carpenter\",\"email\": \"\",\"phone\": \"09434415812\",\"facebook\": \"\"}");
         contactDetails.put("Accomodation", "{\"name\": \"Sidhant Agarwal\",\"email\": \"\",\"phone\": \"09933940944\",\"facebook\": \"\"}");
 
-        contactUsNames = Arrays.asList("Aman", "Shivang", "Rohan", "Stuti", "Aditi", "Swadha", "Vivek", "Chowdhury", "Carpenter", "Accomodation");
+        contactUsNames = Arrays.asList("Aman","Ayush", "Amit", "Shivang", "Rohan", "Stuti", "Aditi", "Swadha", "Vivek", "Chowdhury", "Carpenter", "Accomodation");
         polesapartNames = Arrays.asList("Amit", "Rohan");
         staxNames = Arrays.asList("Aman", "Vivek", "Shivang");
         fortressNames = Arrays.asList("Swadha");

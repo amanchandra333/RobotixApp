@@ -101,7 +101,7 @@ public class OpenerMain extends NavigationDrawer {
         openerList.add(a);
         a = new OpenerHome("Campus Map", covers[2]);
         openerList.add(a);
-        a = new OpenerHome("About us", covers[3]);
+        a = new OpenerHome("Know More About Us", covers[3]);
         openerList.add(a);
         a = new OpenerHome("Contact Us", covers[4]);
         openerList.add(a);
@@ -152,6 +152,7 @@ public class OpenerMain extends NavigationDrawer {
                 }
 
                 startActivity(pushnot);
+                finish();
             }
 
             @Override

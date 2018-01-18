@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,7 @@ import org.json.JSONObject;
  * Created by lenovo on 24-Jan-17.
  */
 
-public class Event extends NavigationDrawer{
+public class Event extends AppCompatActivity{
     final Context context = this;
     Config mConfig;
     private String mUrl, mtitle, mPdf;
@@ -69,24 +70,25 @@ public class Event extends NavigationDrawer{
             category.setText("Category of event: AUTONOMOUS");
             ps.setText("To build a robot which can rearrange blocks of different colours from a stack in a pattern by identifying the colours simultaneously moving across the stacks using line following.");
             usp.setText("• Autonomous Traversal (Line Following)\n" +
-                    "                \\n• Colour Identification\n" +
-                    "                \\n• Sorting Algorithm");
+                    "• Colour Identification\n" +
+                    "• Sorting Algorithm");
             image.setImageResource(R.drawable.stax);
         }
         else if(mID==1){
             category.setText("Category of event: MANUAL");
-            ps.setText("• Changing interaxial distance.\n" +
-                    "                \\n• Gripping and lifting mechanism.\n" +
-                    "                \\n• Placing blocks in their respective places.");
+            ps.setText("To build a manually controlled robot, which is capable of picking and placing blocks with accuracy and changing its inter-axial distance to make its way through a series of hurdles.");
+            usp.setText("• Changing inter-axial distance.\n" +
+                    "• Gripping and lifting mechanism.\n" +
+                    "• Placing blocks in their respective places.");
             image.setImageResource(R.drawable.polesapart);
         }
         else{
             category.setText("Category of event: COMPUTER VISION");
             ps.setText("Build an image processing robot that can recognise useful patterns by pattern recognition while avoiding other obstacles. The video feed of the arena will be given by an overhead camera.");
             usp.setText("• Template matching\n" +
-                    "                \\n• Pattern Recognition\n" +
-                    "                \\n• Image segmentation\n" +
-                    "                \\n• Autonomous traversal");
+                    "• Pattern Recognition\n" +
+                    "• Image segmentation\n" +
+                    "• Autonomous traversal");
             image.setImageResource(R.drawable.fortress);
         }
 
@@ -174,7 +176,7 @@ public class Event extends NavigationDrawer{
     }
     @Override
     public void onBackPressed() {
-        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        Intent pushnot = new Intent("in.robotix.robotixapp.EVENTS");
         startActivity(pushnot);
         finish();
     }

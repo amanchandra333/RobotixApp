@@ -211,4 +211,10 @@ public class GoogleSignInActivity extends BaseActivity implements
             revokeAccess();
         }
     }
+    @Override
+    public void onBackPressed() {
+        Intent pushnot = new Intent("in.robotix.robotixapp.HOME");
+        startActivity(pushnot);
+        finish();
+    }
 }

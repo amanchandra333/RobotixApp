@@ -1,569 +1,493 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:layout_weight="1" >
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
-    <LinearLayout
-        style="@style/Fragment"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="@dimen/detail_backdrop_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <ImageView
+                android:src="@drawable/contactus_b"
+                android:id="@+id/backdrop_contactus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_contactus"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            style="@style/Fragment"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
-            android:text="* Tap on image to view Contact Details\n* Tap on name to call directly."
-            android:autoText="false" />
+            android:orientation="vertical">
 
-
-        <!-- Heading -->
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:layout_marginTop="5dp">
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="Help Desk"
-                style="@style/heading"
-                android:autoText="false" />
-        </RelativeLayout>
+                android:autoText="false"
+                android:text="* Tap on image to view Contact Details\n* Tap on name to call directly."
+                android:textSize="10dp" />
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
+            <!-- Heading -->
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
+                style="@style/container"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
 
-                <ImageView
-                    android:src="@drawable/stuti_modi"
-                    style="@style/SummaryImage"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:id="@+id/Stuti_iv"
-                    />
                 <TextView
+                    style="@style/heading"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:autoText="false"
                     android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Stuti Modi"
-                    android:layout_below="@id/Stuti_iv"
-                    android:id="@+id/Stuti_tv"
-                    style="@style/heading1"
-                    android:autoText="false" />
+                    android:text="Help Desk" />
             </RelativeLayout>
 
-        </LinearLayout>
 
-
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
+                style="@style/container"
+                android:layout_width="match_parent"
+                android:layout_height="85dp">
 
-                <ImageView
-                    android:src="@drawable/aditi_kambli"
-                    style="@style/SummaryImage"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:id="@+id/Aditi_iv"
-                    />
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Aditi Kambli"
-                    android:layout_below="@id/Aditi_iv"
-                    android:id="@+id/Aditi_tv"
-                    style="@style/heading1"
-                    android:autoText="false" />
-            </RelativeLayout>
-
-        </LinearLayout>
-
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
-
-                <ImageView
-                    android:src="@drawable/ayush_patnaik"
-                    style="@style/SummaryImage"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:id="@+id/Ayush_iv"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Ayush Patnaik"
-                    android:layout_below="@id/Ayush_iv"
                     android:id="@+id/Ayush_tv"
                     style="@style/heading1"
-                    android:autoText="false" />
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="-20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/darker_gray"/>
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:layout_marginTop="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="Poles Apart"
-                style="@style/heading"
-                android:autoText="false" />
-        </RelativeLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/Ayush_iv"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/Ayush_iv"
+                    android:autoText="false"
+                    android:gravity="center"
+                    android:text="Ayush Patnaik" />
 
                 <ImageView
-                    android:src="@drawable/rohan_sitaniya"
+                    android:id="@+id/Aditi_iv"
                     style="@style/SummaryImage"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:id="@+id/Rohan_iv"
-                    />
-                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="Rohan Sitaniya"
-                    android:layout_below="@id/Rohan_iv"
-                    android:id="@+id/Rohan_tv"
-                    style="@style/heading1"
-                    android:autoText="false" />
-            </RelativeLayout>
-
-        </LinearLayout>
-
-
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
+                    android:layout_alignBottom="@+id/Stuti_iv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginRight="26dp"
+                    android:gravity="center"
+                    android:src="@drawable/aditi_kambli" />
 
                 <ImageView
-                    android:src="@drawable/amit_pathak"
+                    android:id="@+id/Stuti_iv"
                     style="@style/SummaryImage"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
                     android:gravity="center"
-                    android:id="@+id/Amit_iv"
-                    />
+                    android:src="@drawable/stuti_modi" />
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Amit Pathak"
-                    android:layout_below="@id/Amit_iv"
-                    android:id="@+id/Amit_tv"
+                    android:id="@+id/Aditi_tv"
                     style="@style/heading1"
-                    android:autoText="false" />
-            </RelativeLayout>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/Aditi_iv"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/Aditi_iv"
+                    android:autoText="false"
+                    android:gravity="center"
+                    android:text="Aditi Kambli" />
 
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="-20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/darker_gray"/>
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:layout_marginTop="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="Stax"
-                style="@style/heading"
-                android:autoText="false" />
-        </RelativeLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15px"
-            android:weightSum="2">
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:orientation="vertical">
-
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    style="@style/container">
-
-                    <ImageView
-                        android:src="@drawable/shivang_agrawal"
-                        style="@style/SummaryImage"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:id="@+id/Shivang_iv"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="Shivang Agrawal"
-                        android:layout_below="@id/Shivang_iv"
-                        android:id="@+id/Shivang_tv"
-                        style="@style/heading1"
-                        android:autoText="false" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    style="@style/container">
-
-                    <ImageView
-                        android:src="@drawable/vivek_mudgal"
-                        style="@style/SummaryImage"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:id="@+id/Vivek_iv"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="Vivek Mudgal"
-                        android:layout_below="@id/Vivek_iv"
-                        android:id="@+id/Vivek_tv"
-                        style="@style/heading1"
-                        android:autoText="false" />
-                </RelativeLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
+                <TextView
+                    android:id="@+id/Stuti_tv"
+                    style="@style/heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Stuti_iv"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/Stuti_iv"
+                    android:autoText="false"
+                    android:gravity="center"
+                    android:text="Stuti Modi" />
 
                 <ImageView
-                    android:src="@drawable/aman_chandra"
+                    android:id="@+id/Ayush_iv"
                     style="@style/SummaryImage"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
                     android:gravity="center"
-                    android:id="@+id/Aman_iv"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Aman Chandra"
-                    android:layout_below="@id/Aman_iv"
-                    android:id="@+id/Aman_tv"
-                    style="@style/heading1"
-                    android:autoText="false" />
+                    android:src="@drawable/ayush_patnaik" />
+
             </RelativeLayout>
 
-        </LinearLayout>
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="-20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/darker_gray"/>
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:layout_marginTop="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="Fortress"
-                style="@style/heading"
-                android:autoText="false" />
-        </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray" />
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15px"
-            android:weightSum="2">
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 style="@style/container"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:orientation="vertical">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    style="@style/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:autoText="false"
+                    android:gravity="center"
+                    android:text="Poles Apart" />
+            </RelativeLayout>
+
 
                 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    style="@style/container">
+                    style="@style/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
 
                     <ImageView
-                        android:src="@drawable/swadha_gupta"
+                        android:id="@+id/Rohan_iv"
                         style="@style/SummaryImage"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignEnd="@+id/Rohan_tv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/Rohan_tv"
                         android:gravity="center"
-                        android:id="@+id/Swadha_iv"
-                        />
+                        android:src="@drawable/rohan_sitaniya" />
+
+                    <ImageView
+                        android:id="@+id/Amit_iv"
+                        style="@style/SummaryImage"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:gravity="center"
+                        android:src="@drawable/amit_pathak" />
+
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="Swadha Gupta"
-                        android:layout_below="@id/Swadha_iv"
-                        android:id="@+id/Swadha_tv"
+                        android:id="@+id/Amit_tv"
                         style="@style/heading1"
-                        android:autoText="false" />
-                </RelativeLayout>
-            </LinearLayout>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/Amit_iv"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/Amit_iv"
+                        android:autoText="false"
+                        android:gravity="center"
+                        android:text="Amit Pathak" />
 
-            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-            <!--style="@style/container"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:orientation="vertical">-->
+                    <TextView
+                        android:id="@+id/Rohan_tv"
+                        style="@style/heading1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/Amit_tv"
+                        android:layout_alignBottom="@+id/Amit_tv"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginStart="65dp"
+                        android:autoText="false"
+                        android:gravity="center"
+                        android:text="Rohan Sitaniya" />
+            </RelativeLayout>
 
-            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-            <!--style="@style/container">-->
-
-            <!--<ImageView-->
-            <!--android:src="@drawable/logo"-->
-            <!--style="@style/SummaryImage"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:gravity="center"-->
-            <!--android:id="@+id/Aaditya_iv"-->
-            <!--/>-->
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:gravity="center"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="Aaditya Sanjay Boob"-->
-            <!--android:layout_below="@id/Aaditya_iv"-->
-            <!--android:id="@+id/Aaditya_tv"-->
-            <!--style="@style/heading1"-->
-            <!--android:autoText="false" />-->
-            <!--</RelativeLayout>-->
-        </LinearLayout>
-        <!--</LinearLayout>-->
 
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:layout_marginBottom="-20dp"
             android:layout_marginTop="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                style="@style/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Stax" />
+        </RelativeLayout>
 
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/container"
-            android:layout_marginTop="45dp">
-            <TextView
-                android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+
+            <ImageView
+                android:id="@+id/Shivang_iv"
+                style="@style/SummaryImage"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
                 android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="Participants' Reference"
+                android:src="@drawable/shivang_agrawal" />
+
+            <TextView
+                android:id="@+id/Shivang_tv"
                 style="@style/heading1"
-                android:autoText="false" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Shivang Agrawal" />
+
+            <ImageView
+                android:id="@+id/Vivek_iv"
+                style="@style/SummaryImage"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/vivek_mudgal" />
+
+
+            <ImageView
+                android:id="@+id/Aman_iv"
+                style="@style/SummaryImage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:gravity="center"
+                android:src="@drawable/aman_chandra" />
+
+
+            <TextView
+                android:id="@+id/Vivek_tv"
+                style="@style/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Vivek Mudgal" />
+
+
+            <TextView
+                android:id="@+id/Aman_tv"
+                style="@style/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Aman_iv"
+                android:layout_alignStart="@+id/Aman_iv"
+                android:layout_below="@+id/Aman_iv"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Aman Chandra" />
         </RelativeLayout>
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/container"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15px"
-            android:weightSum="2">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:orientation="vertical">
+            <TextView
+                style="@style/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Fortress" />
+        </RelativeLayout>
 
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    style="@style/container">
 
-                    <ImageView
-                        android:src="@drawable/electric"
-                        style="@style/SummaryImage"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:id="@+id/Chowdhury_iv"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="Chowdhury Electronics"
-                        android:layout_below="@id/Chowdhury_iv"
-                        android:id="@+id/Chowdhury_tv"
-                        style="@style/heading1"
-                        android:autoText="false" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    style="@style/container">
-
-                    <ImageView
-                        android:src="@drawable/carpenter"
-                        style="@style/SummaryImage"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:gravity="center"
-                        android:id="@+id/Carpenter_iv"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="Carpenter"
-                        android:layout_below="@id/Carpenter_iv"
-                        android:id="@+id/Carpenter_tv"
-                        style="@style/heading1"
-                        android:autoText="false" />
-                </RelativeLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/container"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="10dp">
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/container">
+            android:layout_height="85dp">
 
-                <ImageView
-                    android:src="@drawable/acco"
-                    style="@style/SummaryImage"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:id="@+id/Accomodation_iv"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Accomodation"
-                    android:layout_below="@id/Accomodation_iv"
-                    android:id="@+id/Accomodation_tv"
-                    style="@style/heading1"
-                    android:autoText="false" />
-            </RelativeLayout>
+            <ImageView
+                android:id="@+id/Swadha_iv"
+                style="@style/SummaryImage"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/swadha_gupta" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/Swadha_tv"
+                style="@style/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Swadha_iv"
+                android:layout_centerHorizontal="true"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Swadha Gupta" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                style="@style/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Participants' Reference" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/container"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+
+            <ImageView
+                android:id="@+id/Chowdhury_iv"
+                style="@style/SummaryImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:gravity="center"
+                android:src="@drawable/electric" />
+
+            <TextView
+                android:id="@+id/Chowdhury_tv"
+                style="@style/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Carpenter_iv"
+                android:layout_centerHorizontal="true"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Chowdhury \nElectronics" />
+
+
+            <ImageView
+                android:id="@+id/Carpenter_iv"
+                style="@style/SummaryImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/carpenter" />
+
+            <TextView
+                android:id="@+id/Carpenter_tv"
+                style="@style/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Chowdhury_iv"
+                android:layout_alignRight="@+id/Chowdhury_iv"
+                android:layout_below="@+id/Chowdhury_iv"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Carpenter" />
+
+
+            <ImageView
+                android:id="@+id/Accomodation_iv"
+                style="@style/SummaryImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/Accomodation_tv"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Accomodation_tv"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:gravity="center"
+                android:src="@drawable/acco" />
+
+            <TextView
+                android:id="@+id/Accomodation_tv"
+                style="@style/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Accomodation_iv"
+                android:autoText="false"
+                android:gravity="center"
+                android:text="Accomodation" />
+        </RelativeLayout>
+
     </LinearLayout>
-</ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
