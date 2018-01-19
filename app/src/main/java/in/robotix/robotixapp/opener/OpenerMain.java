@@ -93,25 +93,28 @@ public class OpenerMain extends NavigationDrawer {
                 R.drawable.map_b,
                 R.drawable.aboutus_b,
                 R.drawable.contactus_b,
-                R.drawable.faq_b,};
+                R.drawable.faq_b,
+                R.drawable.event_bann,
+                R.drawable.faq_backdrop,};
 
         OpenerHome a;
+        a = new OpenerHome("Notice Board", covers[0]);
+        openerList.add(a);
         a = new OpenerHome("Explore Our Events", covers[1]);
         openerList.add(a);
-        a = new OpenerHome("Registrations for Robotix 2018", covers[0]);
+        a = new OpenerHome("Registrations for Robotix 2018", covers[6]);
+        openerList.add(a);
+        a = new OpenerHome("Frequently Asked Questions", covers[7]);
         openerList.add(a);
         a = new OpenerHome("Campus Map", covers[2]);
+        openerList.add(a);
+        a = new OpenerHome("Our Collection of Tutorials", covers[5]);
         openerList.add(a);
         a = new OpenerHome("Know More About Us", covers[3]);
         openerList.add(a);
         a = new OpenerHome("Contact Us", covers[4]);
         openerList.add(a);
-        a = new OpenerHome("Frequently Asked Questions", covers[5]);
-        openerList.add(a);
-        a = new OpenerHome("Our Collection of Tutorials", covers[0]);
-        openerList.add(a);
-        a = new OpenerHome("Notice Board", covers[0]);
-        openerList.add(a);
+
 
         adapter.setListContent(openerList);
         recyclerView.setAdapter(adapter);
@@ -127,30 +130,30 @@ public class OpenerMain extends NavigationDrawer {
                 //Values are passing to activity & to fragment as well
                 Intent pushnot;
                 switch (position) {
-                    case 0:
+                    case 1:
                         pushnot = new Intent("in.robotix.robotixapp.EVENTS");
                         break;
-                    case 1:
+                    case 2:
                         pushnot = new Intent("in.robotix.robotixapp.WEBVIEW");
                         pushnot.putExtra("Title", "Blog");
                         pushnot.putExtra("Link", "https://2018.robotix.in/blog/registration-for-robotix-2018/");
                         break;
-                    case 2:
-                        pushnot = new Intent("in.robotix.robotixapp.MAPS");
-                        break;
                     case 3:
-                        pushnot = new Intent("in.robotix.robotixapp.ABOUTUS");
-                        break;
-                    case 4:
-                        pushnot = new Intent("in.robotix.robotixapp.CONTACTUS");
-                        break;
-                    case 5:
                         pushnot = new Intent("in.robotix.robotixapp.FAQS");
                         break;
                     case 6:
+                        pushnot = new Intent("in.robotix.robotixapp.ABOUTUS");
+                        break;
+                    case 7:
+                        pushnot = new Intent("in.robotix.robotixapp.CONTACTUS");
+                        break;
+                    case 5:
                         pushnot = new Intent("in.robotix.robotixapp.WEBVIEW");
                         pushnot.putExtra("Title", "Tutorials");
                         pushnot.putExtra("Link", "https://2018.robotix.in/tutorial/");
+                        break;
+                    case 4:
+                        pushnot = new Intent("in.robotix.robotixapp.MAPS");
                         break;
                     default:
                         pushnot = new Intent("in.robotix.robotixapp.NOTICEBOARD");

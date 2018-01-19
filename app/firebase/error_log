@@ -1,0 +1,1 @@
+[20-Jan-2018 01:53:34 Asia/Kolkata] PHP Notice:  Use of undefined constant FIREBASE_API_KEY - assumed 'FIREBASE_API_KEY' in /home/manashpr/public_html/firebase/firebase.php on line 46

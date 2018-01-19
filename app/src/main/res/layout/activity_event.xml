@@ -24,7 +24,7 @@
             app:expandedTitleMarginEnd="64dp">
 
             <ImageView
-                android:src="@drawable/fortress"
+                android:src="@drawable/events_b"
                 android:id="@+id/event_backdrop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

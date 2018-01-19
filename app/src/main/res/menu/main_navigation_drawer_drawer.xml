@@ -3,9 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/signin"
+            android:id="@+id/home"
             android:icon="@drawable/rbtxlogo"
-            android:title="Sign In" />
+            android:title="Home"/>
         <item
             android:id="@+id/rand_tut"
             android:icon="@drawable/home_icon"
