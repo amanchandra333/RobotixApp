@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.AppBarLayout;
@@ -62,21 +63,39 @@ public class WebviewActivity extends AppCompatActivity {
         });
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_tut);
         collapsingToolbar.setTitle(title);
-
-        if(mUrl.equals("rand")) {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-            XMLParser caller = new XMLParser();
-            mUrl = caller.TutorialGetter();
-        }
-
         mContext = getApplicationContext();
         mActivity = WebviewActivity.this;
         mWebView = (WebView) findViewById(R.id.web_view);
         mAppbar =  (AppBarLayout) findViewById(R.id.appbar);
         loading = (RelativeLayout) findViewById(R.id.loadingPanel);
 
-        renderWebPage(mUrl);
+        if(mUrl.equals("rand")) {
+                    XMLParser caller = new XMLParser();
+                    new Downloader().execute(caller);
+        }
+        else
+            renderWebPage(mUrl);
+
+    }
+
+    private class Downloader extends AsyncTask<XMLParser, Void, String> {
+
+        @Override
+        protected String doInBackground(XMLParser... caller1) {
+            mUrl = caller1[0].TutorialGetter();
+            return mUrl;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            renderWebPage(mUrl);
+        }
+
+        @Override
+        protected void onPreExecute() {}
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
     }
 
     // Custom method to render a web page

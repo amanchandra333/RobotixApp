@@ -65,6 +65,7 @@ public class Event extends AppCompatActivity{
         TextView ps = (TextView)findViewById(R.id.textView2);
         TextView usp = (TextView)findViewById(R.id.textView1);
         ImageView image = (ImageView)findViewById(R.id.event_pic);
+        ImageView backdrop = (ImageView)findViewById(R.id.event_backdrop);
 
         if(mID==0){
             category.setText("Category of event: AUTONOMOUS");
@@ -73,6 +74,7 @@ public class Event extends AppCompatActivity{
                     "• Colour Identification\n" +
                     "• Sorting Algorithm");
             image.setImageResource(R.drawable.stax);
+            backdrop.setImageResource(R.drawable.stax_m);
         }
         else if(mID==1){
             category.setText("Category of event: MANUAL");
@@ -81,6 +83,7 @@ public class Event extends AppCompatActivity{
                     "• Gripping and lifting mechanism.\n" +
                     "• Placing blocks in their respective places.");
             image.setImageResource(R.drawable.polesapart);
+            backdrop.setImageResource(R.drawable.polesapart_m);
         }
         else{
             category.setText("Category of event: COMPUTER VISION");
@@ -90,6 +93,7 @@ public class Event extends AppCompatActivity{
                     "• Image segmentation\n" +
                     "• Autonomous traversal");
             image.setImageResource(R.drawable.fortress);
+            backdrop.setImageResource(R.drawable.fortress_m);
         }
 
         mConfig = new Config(this);

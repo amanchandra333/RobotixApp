@@ -42,7 +42,7 @@ public class Events extends NavigationDrawer {
         prepareOpeners();
 
         try {
-            Glide.with(this).load(R.drawable.event_bann).into((ImageView) findViewById(R.id.backdrop1));
+            Glide.with(this).load(R.drawable.events_b).into((ImageView) findViewById(R.id.backdrop1));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -89,19 +89,19 @@ public class Events extends NavigationDrawer {
                         pushnot.putExtra("Title", "Stax");
                         pushnot.putExtra("ID",0 );
                         pushnot.putExtra("Url", "http://www.robotix.in/event/stax/");
-                        pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/stax/stax.pdf");
+                        pushnot.putExtra("PDF", "https://2018.robotix.in/assets/event/Stax.pdf");
                         break;
                     case 1:
                         pushnot.putExtra("Title", "Poles Apart");
                         pushnot.putExtra("ID", 1);
                         pushnot.putExtra("Url", "http://www.robotix.in/event/poles-apart/");
-                        pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/polesapart/polesapart.pdf");
+                        pushnot.putExtra("PDF", "https://2018.robotix.in/assets/event/Poles-Apart.pdf");
                         break;
                     default:
                         pushnot.putExtra("Title", "Fortress");
                         pushnot.putExtra("ID", 2);
                         pushnot.putExtra("Url", "http://www.robotix.in/event/fortress/");
-                        pushnot.putExtra("PDF", "http://www.robotix.in/assets/event/fortress/fortress.pdf");
+                        pushnot.putExtra("PDF", "https://2018.robotix.in/assets/event/Fortress.pdf");
                         break;
                 }
                 startActivity(pushnot);
